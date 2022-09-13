@@ -1,0 +1,622 @@
+@charset "utf-8";
+
+@import '../scss/base/font';
+@import '../scss/base/space';
+@import '../scss/base/shape';
+@import '../scss/base/border';
+@import '../scss/base/color';
+@import '../scss/mixin/item';
+@import '../scss/mixin/rem';
+
+html,
+body {
+  font-size: 15px;
+  font-family: NotoSans-Regular, AppleSDGothicNeo-Regular, '맑은 고딕',
+    Malgun Gothic, '돋움', dotum, sans-serif;
+}
+
+.mobile {
+  .content {
+    max-width: 100%;
+    margin: 0 auto;
+    &__inner {
+      position: relative;
+      padding: 2.666666666666667vw 4.266666666666667vw 0 4.266666666666667vw;
+      box-sizing: border-box;
+      .store {
+        .store__contents {
+          position: relative;
+          width: 100%;
+          max-width: 343px;
+          max-width: 91.46666666666667vw;
+          margin: 0 auto;
+          padding-top: 20px;
+          padding-top: 5.333333333333334vw;
+          .flag-store {
+            .flagship {
+              width: 100%;
+              @include rem(15);
+              margin-top: 25px;
+              margin-top: 6.666666666666667vw;
+              &__bg {
+                width: 100%;
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+              &__info {
+                strong {
+                  display: block;
+                  @include rem(22);
+                  color: #000000;
+                  padding: 20px 0 10px 0;
+                  padding: 5.333333333333334vw 0 2.666666666666667vw 0;
+                  box-sizing: border-box;
+                }
+                .flagship__telNum {
+                  background: url('../../img/pages/store/store_ico_call.png')
+                    no-repeat;
+                }
+                .flagship__busiHour {
+                  background: url('../../img/pages/store/store_ico_busihour.png')
+                    no-repeat;
+                }
+                .flagship__address {
+                  background: url('../../img/pages/store/store_ico_location.png')
+                    no-repeat;
+                  .flagship__more {
+                    margin-top: 6px;
+                    margin-top: 1.6vw;
+                    a {
+                      display: inline-block;
+                      @include rem(16);
+                      font-weight: bold;
+                      padding-right: 10px;
+                      padding-right: 2.666666666666667vw;
+                      text-decoration: underline;
+                    }
+                  }
+                }
+                ul {
+                  li {
+                    padding-left: 35px;
+                    padding-left: 9.333333333333334vw;
+                    line-height: 25px;
+                    line-height: 6.666666666666667vw;
+                    &:nth-child(2) {
+                      margin: 6px 0 6px 0;
+                      margin: 1.6vw 0 1.6vw 0;
+                    }
+                  }
+                }
+              }
+              &__map {
+                position: relative;
+                width: 100%;
+                height: 210px;
+                height: 56.00000000000001vw;
+                margin: 15px 0 30px 0;
+                margin: 4vw 0 8vw 0;
+                border-radius: 7px;
+                border-radius: 1.866666666666667vw;
+                .flagship__map--more {
+                  display: block;
+                  width: 115px;
+                  width: 30.666666666666664vw;
+                  height: 41px;
+                  height: 10.933333333333334vw;
+                  position: absolute;
+                  bottom: 14px;
+                  bottom: 3.733333333333334vw;
+                  right: 16px;
+                  right: 4.266666666666667vw;
+                  z-index: 10;
+                  line-height: 41px;
+                  line-height: 10.933333333333334vw;
+                  text-align: center;
+                  color: #000;
+                  @include rem(12);
+                  border: 1px solid #eeeeee;
+                  border-radius: 10px;
+                  border-radius: 2.666666666666667vw;
+                  background: #ffffff;
+                }
+              }
+            }
+          }
+          .store__finder {
+            margin-top: 97px;
+            margin-top: 25.866666666666667vw;
+            .store__tab {
+              float: left;
+              ul {
+                li {
+                  display: inline-block;
+                  padding: 10px 10px 10px 10px;
+                  padding: 2.666666666666667vw 2.666666666666667vw
+                    2.666666666666667vw 2.666666666666667vw;
+                  box-sizing: border-box;
+                  a {
+                    display: block;
+                    @include rem(19);
+                    font-weight: 700;
+                    color: #9a9a9e;
+                  }
+                }
+              }
+            }
+            .store__tab--line {
+              li {
+                &:hover {
+                  .underline:before {
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+                  }
+                }
+                &:focus {
+                  .underline:after {
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+                  }
+                }
+              }
+              .underline {
+                position: relative;
+                &:before {
+                  background-color: #333;
+                }
+                &:after {
+                  background-color: #00c73c;
+                }
+                &:before,
+                &:after {
+                  content: ' ';
+                  display: block;
+                  width: 100%;
+                  height: 1px;
+                  height: 0.26666666666666666vw;
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                  transform-origin: 0 0;
+                  -webkit-transform-origin: 0 0;
+                  transform: scaleX(0);
+                  -webkit-transform: scaleX(0);
+                  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
+                    -webkit-transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+              }
+            }
+            .store__area {
+              .global {
+                > ul {
+                  > li {
+                    width: 100%;
+                    margin: 11px 20px 0 0;
+                    margin: 2.933333333333333vw 5.333333333333334vw 0 0;
+                    .store {
+                      padding: 20px 0 0 0;
+                      padding: 5.333333333333334vw 0 0 0;
+                      box-sizing: border-box;
+                      .store__bg {
+                        width: inherit;
+                        img {
+                          width: 100%;
+                          height: auto;
+                        }
+                      }
+                      .store__title {
+                        display: block;
+                        @include rem(20);
+                        margin: 21px 0 12px 0;
+                        margin: 5.6000000000000005vw 0 3.2vw 0;
+                      }
+                      .store__info {
+                        .store__telNum {
+                          height: 28px;
+                          height: 7.466666666666668vw;
+                          padding-left: 35px;
+                          padding-left: 9.333333333333334vw;
+                          background: url('../../img/pages/store/store_ico_call.png')
+                            no-repeat;
+                          a {
+                            @include rem(15);
+                            word-spacing: -4px;
+                            word-spacing: -1.0666666666666667vw;
+                          }
+                        }
+                        .store__telNum.store__txt--long {
+                          height: 49px;
+                          height: 13.066666666666665vw;
+                        }
+                        .store__busiHour {
+                          height: 27px;
+                          height: 7.199999999999999vw;
+                          margin: 6px 0 6px 0;
+                          margin: 1.6vw 0 1.6vw 0;
+                          padding-left: 35px;
+                          padding-left: 9.333333333333334vw;
+                          background: url('../../img/pages/store/store_ico_busihour.png')
+                            no-repeat;
+                        }
+                        .store__busiHour,
+                        .store__address {
+                          .store__txt {
+                            @include rem(15);
+                            line-height: 28px;
+                            line-height: 7.466666666666668vw;
+                            word-spacing: -4px;
+                            word-spacing: -1.0666666666666667vw;
+                          }
+                        }
+                        .store__address {
+                          padding-left: 35px;
+                          padding-left: 9.333333333333334vw;
+                          background: url('../../img/pages/store/store_ico_location.png')
+                            no-repeat;
+                        }
+                        .store__map {
+                          display: block;
+                          @include rem(15);
+                          padding: 5px 0 0 34px;
+                          padding: 1.3333333333333335vw 0 0 9.066666666666666vw;
+                          box-sizing: border-box;
+                          color: #4a90e2;
+                        }
+                      }
+                    }
+                    &:nth-child(3n) {
+                      margin-right: 0;
+                    }
+                  }
+                }
+                .btn-store-more {
+                  display: block;
+                  width: 70%;
+                  height: 50px;
+                  height: 13.333333333333334vw;
+                  line-height: 50px;
+                  line-height: 13.333333333333334vw;
+                  @include rem(15);
+                  border-radius: 16px;
+                  border-radius: 4.266666666666667vw;
+                  margin: 30px auto 30px auto;
+                  margin: 8vw auto 8vw auto;
+                  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
+                  box-shadow: rgba(0, 0, 0, 0.2) 0 1.3333333333333335vw
+                    3.4666666666666663vw;
+                }
+              }
+              .local {
+                .store__location {
+                  font-size: 0;
+                  > li {
+                    width: 33.33333%;
+                    display: inline-block;
+                    @include rem(15);
+                    padding: 12px;
+                    padding: 3.2vw;
+                    font-weight: bold;
+                    box-sizing: border-box;
+                  }
+                }
+                .local-selection {
+                  .area {
+                    li {
+                      .store {
+                        padding: 20px 0 20px 0;
+                        padding: 5.333333333333334vw 0 5.333333333333334vw 0;
+                        box-sizing: border-box;
+                        .store__bg {
+                          width: 100%;
+                          img {
+                            width: 100%;
+                            height: auto;
+                          }
+                        }
+                        .store__title {
+                          display: block;
+                          @include rem(20);
+                          margin: 21px 0 12px 0;
+                          margin: 5.6000000000000005vw 0 3.2vw 0;
+                        }
+                        .store__info {
+                          .store__telNum {
+                            height: 27px;
+                            height: 7.199999999999999vw;
+                            padding-left: 35px;
+                            padding-left: 9.333333333333334vw;
+                            background: url('../../img/pages/store/store_ico_call.png')
+                              no-repeat;
+                            a {
+                              @include rem(15);
+                              word-spacing: -3px;
+                              word-spacing: -0.8vw;
+                            }
+                          }
+                          .store__telNum.store__txt--long {
+                            height: 49px;
+                            height: 13.066666666666665vw;
+                          }
+                          .store__busiHour {
+                            height: 27px;
+                            height: 7.199999999999999vw;
+                            margin: 6px 0 6px 0;
+                            margin: 1.6vw 0 1.6vw 0;
+                            padding-left: 35px;
+                            padding-left: 9.333333333333334vw;
+                            background: url('../../img/pages/store/store_ico_busihour.png')
+                              no-repeat;
+                          }
+                          .store__busiHour,
+                          .store__address {
+                            .store__txt {
+                              @include rem(15);
+                              line-height: 28px;
+                              line-height: 7.466666666666668vw;
+                              word-spacing: -3px;
+                              word-spacing: -0.8vw;
+                            }
+                          }
+                          .store__busiHour.store__txt--long {
+                            height: 49px;
+                            height: 13.066666666666665vw;
+                            word-spacing: -3px;
+                            word-spacing: -0.8vw;
+                          }
+                          .store__address {
+                            padding-left: 35px;
+                            padding-left: 9.333333333333334vw;
+                            background: url('../../img/pages/store/store_ico_location.png')
+                              no-repeat;
+                          }
+                          .store__map {
+                            display: block;
+                            @include rem(15);
+                            padding: 5px 0 0 34px;
+                            padding: 1.3333333333333335vw 0 0
+                              9.066666666666666vw;
+                            box-sizing: border-box;
+                            color: #4a90e2;
+                          }
+                        }
+                      }
+                      &:nth-child(3n) {
+                        margin-right: 0;
+                      }
+                    }
+                  }
+                }
+              }
+              .japan {
+                .store__location {
+                  font-size: 0;
+                  > li {
+                    width: 50%;
+                    display: inline-block;
+                    @include rem(15);
+                    padding: 12px;
+                    padding: 3.2vw;
+                    font-weight: bold;
+                    box-sizing: border-box;
+                  }
+                }
+                .local-selection {
+                  > li {
+                    .store {
+                      padding: 20px 0 20px 0;
+                      padding: 5.333333333333334vw 0 5.333333333333334vw 0;
+                      box-sizing: border-box;
+                      .store__bg {
+                        width: 100%;
+                        img {
+                          width: 100%;
+                          height: auto;
+                        }
+                      }
+                      .store__title {
+                        display: block;
+                        @include rem(20);
+                        margin: 21px 0 12px 0;
+                        margin: 5.6000000000000005vw 0 3.2vw 0;
+                      }
+                      .store__info {
+                        .store__telNum {
+                          height: 27px;
+                          height: 7.199999999999999vw;
+                          padding-left: 35px;
+                          padding-left: 9.333333333333334vw;
+                          background: url('../../img/pages/store/store_ico_call.png')
+                            no-repeat;
+                          a {
+                            @include rem(15);
+                            word-spacing: -3px;
+                            word-spacing: -0.8vw;
+                          }
+                        }
+                        .store__telNum.store__txt--long {
+                          height: 49px;
+                          height: 13.066666666666665vw;
+                        }
+                        .store__busiHour {
+                          height: 27px;
+                          height: 7.199999999999999vw;
+                          margin: 6px 0 6px 0;
+                          margin: 1.6vw 0 1.6vw 0;
+                          padding-left: 35px;
+                          padding-left: 9.333333333333334vw;
+                          background: url('../../img/pages/store/store_ico_busihour.png')
+                            no-repeat;
+                        }
+                        .store__busiHour,
+                        .store__address {
+                          .store__txt {
+                            @include rem(15);
+                            line-height: 28px;
+                            line-height: 7.466666666666668vw;
+                            word-spacing: -3px;
+                            word-spacing: -0.8vw;
+                          }
+                        }
+                        .store__busiHour.store__txt--long {
+                          height: 49px;
+                          height: 13.066666666666665vw;
+                          word-spacing: -3px;
+                          word-spacing: -0.8vw;
+                        }
+                        .store__address {
+                          padding-left: 35px;
+                          padding-left: 9.333333333333334vw;
+                          background: url('../../img/pages/store/store_ico_location.png')
+                            no-repeat;
+                        }
+                        .store__map {
+                          display: block;
+                          @include rem(15);
+                          padding: 5px 0 0 34px;
+                          padding: 1.3333333333333335vw 0 0 9.066666666666666vw;
+                          box-sizing: border-box;
+                          color: #4a90e2;
+                        }
+                      }
+                    }
+                    &:nth-child(3n) {
+                      margin-right: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .store__adv {
+            display: block;
+            width: 100%;
+            height: 171px;
+            height: 45.6vw;
+            padding-top: 20px;
+            padding-top: 5.333333333333334vw;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+          .back-to-finder {
+            .btn_goto-finder {
+              position: fixed;
+              width: 73px;
+              width: 19.466666666666665vw;
+              height: 100px;
+              height: 26.666666666666668vw;
+              bottom: 66px;
+              bottom: 17.599999999999998vw;
+              background: url('../../img/pages/store/back-to-finder.png') center
+                center no-repeat;
+            }
+          }
+          .click-to-top {
+            .btn-top {
+              display: none;
+              position: fixed;
+              width: 48px;
+              width: 12.8vw;
+              height: 47px;
+              height: 12.533333333333333vw;
+              bottom: 0;
+              z-index: 11;
+              background: url('../../img/pages/store/btn_to_top.png') center
+                center no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1090px) {
+}
+
+@media screen and (max-width: 1066px) {
+}
+
+@media screen and (max-width: 1066px) {
+}
+
+@media screen and (max-width: 910px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+##Device = 데스크탑
+##Screen = 1281px 이상 해상도 데스크탑
+*/
+
+@media (min-width: 1281px) {
+  //CSS
+}
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+##Device = 랩탑, 데스크탑
+##Screen = 1025px에서 1280px 사이
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  //CSS
+}
+
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(세로),
+##Screen = 768px에서 1024px 사이
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  //CSS
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(가로)
+##Screen = 768px에서 1024px 사이
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  //CSS
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+##Device = 저해상도 태블릿, 모바일(가로)
+##Screen = 481px에서 767px 사이
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  //CSS
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+##Screen = 320px에서 479px 사이
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  //CSS
+}

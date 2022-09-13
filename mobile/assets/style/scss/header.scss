@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+@import "../scss/base/reset";
+@import "../scss/base/color";
+@import "../scss/base/font";
+@import "../scss/base/space";
+@import "../scss/base/border";
+@import "../scss/base/shape";
+@import "../scss/mixin/rem";
+
+html,
+body {
+    font-size: 15px;
+    font-family: NotoSans-Regular, AppleSDGothicNeo-Regular, "맑은 고딕",
+        Malgun Gothic, "돋움", dotum, sans-serif;
+}
+
+.mobile {
+    position: relative;
+    overflow: hidden;
+    .logo {
+        position: absolute;
+        width: 139px;
+        top: 6px;
+        left: 50%;
+        margin-left: -84.5px;
+        z-index: 5;
+        a {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .header {
+        padding-top: 4.533333333333333vw;
+        padding-bottom: 21px;
+        .header__inner {
+            position: relative;
+            .header__menu {
+                .header__left {
+                    float: left;
+                    > ul {
+                        > li {
+                            display: inline-block;
+                            &:first-child {
+                                margin: 0 18px 0 10px;
+                                margin: 0 4.8vw 0 2.666666666666667vw;
+                            }
+                        }
+                        .main {
+                            .home {
+                                display: none;
+                                position: fixed;
+                                top: 0;
+                                left: -375px;
+                                width: 100%;
+                                height: 100%;
+                                z-index: 8;
+                                overflow-y: auto;
+                            }
+                        }
+                    }
+                }
+                .header__right {
+                    float: right;
+                    ul {
+                        li {
+                            display: inline-block;
+                            &:last-child {
+                                margin: 0 2.666666666666667vw 0
+                                    4.266666666666667vw;
+                            }
+                        }
+                    }
+                }
+                &:after {
+                    content: " ";
+                    display: block;
+                    clear: both;
+                }
+            }
+            .header__navigation {
+                position: relative;
+                width: calc(100% - 8.533333333333333vw);
+                margin: 0 auto;
+                padding-top: 7.199999999999999vw;
+                ul {
+                    width: 275px;
+                    margin: 0 auto;
+                    text-align: center;
+                    font-size: 0;
+                    li {
+                        position: relative;
+                        display: inline-block;
+                        width: 25%;
+                        text-align: center;
+                        a {
+                            display: block;
+                            @include rem(16);
+                            color: #828282;
+                            padding-bottom: 2.1333333333333333vw;
+                            &:active {
+                                color: red;
+                            }
+                        }
+                        .bar {
+                            position: absolute;
+                            width: 68.75px;
+                            left: 0;
+                            height: 4px;
+                            background: #fec526;
+                            opacity: 1;
+                            transition: all 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 667px) {
+    .mobile {
+        .header {
+            padding: 13px 0 13px 0;
+            .header__inner {
+                .header__logo {
+                    top: -6px;
+                }
+            }
+        }
+    }
+}

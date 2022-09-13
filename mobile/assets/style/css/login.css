@@ -1,0 +1,180 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+.mobile .content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.mobile .content__inner {
+  position: relative;
+  padding: 20px 16px 0 16px;
+}

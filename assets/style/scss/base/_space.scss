@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+// 공통
+@mixin pt($number) {
+  padding-top: $number;
+}
+@mixin pb($number) {
+  padding-bottom: $number;
+}
+@mixin pr($number) {
+  padding-right: $number;
+}
+@mixin pl($number) {
+  padding-left: $number;
+}
+@mixin mt($number) {
+  margin-top: $number;
+}
+@mixin mb($number) {
+  margin-bottom: $number;
+}
+@mixin mr($number) {
+  margin-right: $number;
+}
+@mixin ml($number) {
+  margin-left: $number;
+}
+
+@mixin p2($a, $b) {
+  padding: $a $b;
+}
+
+@mixin p4($a, $b, $c, $d) {
+  padding: $a $b $c $d;
+}
+
+@mixin m2($a, $b) {
+  margin: $a $b;
+}
+
+@mixin m4($a, $b, $c, $d) {
+  margin: $a $b $c $d;
+}
+
+// 웹
+
+// 모바일
+// line-height
+$line-height_item__title: 9.6vw;
+$line-height_item__sub-title: 1.33vw;
+
+// padding
+
+$padding10: 10px 10px 10px 10px;
+
+$padding_item__title: 40px 0 20px 0;
+$padding_content__inner: 20px 16px 0 16px;
+$padding_item__sub-title: 20px 0 20px 0;
+$padding_item__bottom-title: 2.667vw;
+
+//height
+$height_item__sub-title: 8.53333vw;

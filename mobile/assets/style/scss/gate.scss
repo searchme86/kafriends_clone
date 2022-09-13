@@ -1,0 +1,598 @@
+@charset "utf-8";
+
+@import '../scss/base/font';
+@import '../scss/base/space';
+@import '../scss/base/shape';
+@import '../scss/base/border';
+@import '../scss/base/color';
+@import '../scss/mixin/item';
+@import '../scss/mixin/rem';
+
+html,
+body {
+  font-size: 15px;
+  font-family: NotoSans-Regular, AppleSDGothicNeo-Regular, '맑은 고딕',
+    Malgun Gothic, '돋움', dotum, sans-serif;
+}
+
+.mobile {
+  width: 100%;
+  .content {
+    max-width: 100%;
+    margin: 0 auto;
+    .content__inner {
+      position: relative;
+      padding: 25px 36px 0 36px;
+      box-sizing: border-box;
+      .gate {
+        width: 100%;
+        padding-bottom: 175px;
+        .form {
+          &__title {
+            width: 100%;
+            font-size: 27px;
+            padding-bottom: 38px;
+            a {
+              display: block;
+              .kakaoLogin {
+                width: 88px;
+                margin: 0 auto;
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+            }
+          }
+
+          .inputArea {
+            .inputArea__input--email {
+              position: relative;
+
+              .input__email {
+                position: relative;
+
+                .label--email {
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  font-size: 14px;
+                  color: #ced9e8;
+                  padding: 11px 0 15px 0;
+                  cursor: pointer;
+                }
+
+                input[type='text'] {
+                  width: 100%;
+                  height: 47px;
+                  font-size: 15px;
+                  color: #252525;
+                  letter-spacing: -0.3px;
+                  border-width: 0 0 2px 0;
+                  border-bottom: 2px solid #ebebeb;
+                }
+              }
+
+              .infoHelp {
+                &__inputDel {
+                  display: none;
+                  position: absolute;
+                  top: 11px;
+                  right: 0px;
+                  width: 20px;
+                  height: 21px;
+                  border: 0;
+                  background: url('../../img/pages/login/btn__delete.png')
+                    no-repeat;
+                  cursor: pointer;
+                }
+
+                &__infoBtn {
+                  position: absolute;
+                  top: 11px;
+                  right: 0px;
+                  width: 20px;
+                  height: 21px;
+                  border: 0;
+                  background: url('../../img/pages/login/infoBtn.png') no-repeat;
+                  cursor: pointer;
+                }
+
+                &__infoTxt {
+                  position: absolute;
+                  top: 57px;
+                  right: 0px;
+                  z-index: 10;
+                  width: 250px;
+                  height: 55px;
+                  background: #333333;
+                  font-size: 11px;
+                  line-height: 1.5;
+                  padding: 11px 12px 11px 12px;
+                  border-radius: 4px;
+                  box-sizing: border;
+
+                  &--desc {
+                    font-size: 11px;
+                    color: #fff;
+                    letter-spacing: -1px;
+                  }
+
+                  &--find {
+                    a {
+                      position: relative;
+                      top: 10px;
+                      font-size: 11px;
+                      color: #fbda17;
+                      text-decoration: underline;
+                      margin-top: 17px;
+                    }
+                  }
+
+                  &--visible {
+                    display: none;
+                  }
+
+                  &:after {
+                    content: ' ';
+                    position: absolute;
+                    width: 15px;
+                    height: 7px;
+                    top: -7px;
+                    right: 2px;
+                    background: url('../../img/pages/login/here.png') no-repeat;
+                  }
+                }
+              }
+            }
+
+            .inputArea__input--pwd {
+              position: relative;
+
+              .input__pwd {
+                position: relative;
+
+                .label--pwd {
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  font-size: 14px;
+                  color: #ced9e8;
+                  margin-top: 7px;
+                  padding: 11px 0 0 0;
+                  cursor: pointer;
+                }
+
+                input {
+                  width: 100%;
+                  height: 47px;
+                  font-size: 15px;
+                  color: #252525;
+                  letter-spacing: -0.3px;
+                  border-width: 0 0 2px 0;
+                  border-bottom: 2px solid #ebebeb;
+                }
+              }
+
+              .btn-pwd {
+                button {
+                  display: none;
+                  position: absolute;
+                  top: 11px;
+                  right: 0px;
+                  width: 20px;
+                  height: 21px;
+                  border: 0;
+                  background: url('../../img/pages/login/btn__delete.png')
+                    no-repeat;
+                  cursor: pointer;
+                }
+              }
+            }
+
+            .inputArea__input--saved {
+              position: relative;
+              margin: 24px 0 38px 0;
+              .keep-status {
+                position: relative;
+                input[type='checkbox'] + label span {
+                  display: inline-block;
+                  width: 100%;
+                  height: 20px;
+                  line-height: 20px;
+                  padding-left: 28px;
+                  font-size: 13px;
+                  font-weight: bold;
+                  vertical-align: top;
+                  background: url('../../img/pages/login/status__unchecked.png')
+                    no-repeat;
+                  cursor: pointer;
+                }
+                input[type='checkbox']:checked {
+                  & + label span {
+                    background: url('../../img/pages/login/status__checked.png')
+                      no-repeat;
+                  }
+                  & + label + .inputArea__status--alert {
+                    display: block;
+                  }
+                }
+                .inputArea__status--alert {
+                  display: none;
+                  position: absolute;
+                  top: 32px;
+                  left: 0;
+                  z-index: 10;
+                  width: 254px;
+                  height: 52px;
+                  padding: 11px 25px 0 12px;
+                  background: rgba(0, 0, 0, 0.8);
+                  border-radius: 5px;
+
+                  &:after {
+                    content: ' ';
+                    position: absolute;
+                    width: 15px;
+                    height: 7px;
+                    top: -7px;
+                    left: 63px;
+                    background: url('../../img/pages/login/here.png') no-repeat;
+                  }
+
+                  .inputArea__status--desc {
+                    font-size: 11px;
+                    font-weight: bold;
+                    color: #fff;
+                    word-break: keep-all;
+                  }
+
+                  .inputArea__status--find {
+                    a {
+                      position: relative;
+                      top: 7px;
+                      font-size: 11px;
+                      font-weight: bold;
+                      color: #fbda17;
+                      text-decoration: underline;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .btnArea {
+            &__email-btn {
+              width: 100%;
+              height: 50px;
+              line-height: 50px;
+              text-align: center;
+              border: 0;
+              border-radius: 5px;
+              cursor: pointer;
+              .txt {
+                font-size: 14px;
+                color: #333333;
+                font-weight: bold;
+              }
+            }
+
+            .email-btn--colored {
+              background: #ffe500;
+            }
+            &__qr-btn {
+              position: relative;
+              width: 100%;
+              height: 50px;
+              line-height: 50px;
+              text-align: center;
+              border: 0;
+              border-radius: 5px;
+              cursor: pointer;
+              .txt {
+                font-size: 14px;
+                color: #333333;
+                font-weight: bold;
+              }
+              &:before {
+                content: ' ';
+                display: block;
+                position: absolute;
+                width: 17px;
+                height: 17px;
+                top: 16px;
+                left: 112px;
+                background: url('../../img/pages/login/btn_qr.png') no-repeat;
+              }
+            }
+          }
+
+          .txtArea {
+            font-size: 11px;
+            color: #917c7a;
+            padding-top: 35px;
+
+            &__join {
+              float: left;
+            }
+
+            &__findInfo {
+              position: relative;
+              float: right;
+
+              a {
+                display: inline-block;
+                margin-right: 12px;
+                &:last-child {
+                  margin-right: 0;
+                }
+              }
+              &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 1px;
+                height: 12px;
+                top: 3px;
+                left: 65px;
+                background: #e5e5e5;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer {
+      width: 100%;
+      margin: 0 auto;
+      border-top: 1px solid #f4f4f4;
+      .footer__inner {
+        border-top: 1px solid #e3e3e3;
+        .policy {
+          position: relative;
+          .policy-list {
+            padding: 14px 18px 0 18px;
+            font-size: 0;
+            ul {
+              li {
+                display: inline-block;
+                font-size: 11px;
+                color: #959595;
+                text-align: center;
+                padding: 0 7px 0 7px;
+                &:last-child {
+                  position: relative;
+                  padding-right: 0;
+                  &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    right: -14px;
+                    width: 9px;
+                    height: 5px;
+                    background: url('../../img/pages/login/footer_txt_up.png')
+                      no-repeat;
+                  }
+                }
+              }
+              .language-checked {
+                position: absolute;
+                top: 4px;
+                left: 40%;
+              }
+            }
+          }
+          .policy-language {
+            .language {
+              display: none;
+              position: absolute;
+              top: -61px;
+              right: 131px;
+              width: 86px;
+              height: 122px;
+              background: #fff;
+              text-align: left;
+              box-sizing: border-box;
+              font-size: 11px;
+              color: #959595;
+              box-shadow: rgba(0, 0, 0, 0.2) 0 1.3333333333333335vw
+                3.4666666666666663vw;
+              li {
+                padding: 12px 0 12px 14px;
+                box-sizing: border-box;
+                font-size: 13px;
+                font-weight: bold;
+              }
+            }
+          }
+          .policy-copyright {
+            font-size: 11px;
+            color: #959595;
+            padding: 15px 0 16px 0;
+            text-align: center;
+            .company {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .mobile {
+    width: 100%;
+    .content {
+      max-width: 100%;
+      margin: 0 auto;
+
+      .footer {
+        width: 100%;
+        margin: 0 auto;
+        border-top: 1px solid #f4f4f4;
+        .footer__inner {
+          border-top: 1px solid #e3e3e3;
+          .policy {
+            position: relative;
+            .policy-list {
+              padding: 14px 18px 0 18px;
+              font-size: 0;
+              ul {
+                .language-checked {
+                  position: absolute;
+                  top: 0px;
+                  left: 0%;
+                }
+                li {
+                  padding: 0 3px 0 5px;
+                }
+              }
+            }
+            .policy-language {
+              .language {
+                top: -83px;
+                right: 0px;
+                width: 83px;
+              }
+            }
+            .policy-copyright {
+              font-size: 11px;
+              color: #959595;
+              padding: 15px 0 16px 0;
+              text-align: center;
+              .company {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 667px) {
+  .mobile {
+    .content {
+      .content__inner {
+        padding: 100px 118px 0 118px;
+        box-sizing: border-box;
+        .gate {
+          border: 1px solid #e5e5e5;
+          padding-bottom: 54px;
+          margin-bottom: 104px;
+          .form {
+            &__title {
+              width: 100%;
+              font-size: 27px;
+              padding-bottom: 32px;
+              a {
+                display: block;
+                .kakaoLogin {
+                  width: 88px;
+                  margin: 0;
+                  padding: 55px 0 0 70px;
+                  img {
+                    width: 100%;
+                    height: auto;
+                  }
+                }
+              }
+            }
+            .inner-container {
+              padding: 0 70px 0 70px;
+              .inputArea {
+                .inputArea__input--email {
+                  position: relative;
+                  .infoHelp {
+                    &__infoTxt {
+                      width: 100%;
+                      height: 76px;
+                      box-sizing: border-box;
+                    }
+                  }
+                }
+
+                .inputArea__input--pwd {
+                  position: relative;
+                  padding-top: 12px;
+
+                  .input__pwd {
+                    position: relative;
+
+                    .label--pwd {
+                      position: absolute;
+                      top: -4px;
+                    }
+                  }
+
+                  .btn-pwd {
+                    button {
+                      top: 24px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer {
+        margin: 0 auto 114px auto;
+        .footer__inner {
+          .policy {
+            .policy-list {
+              text-align: center;
+              ul {
+                .language-checked {
+                  position: static;
+                  top: 0;
+                  left: 0;
+                }
+              }
+            }
+            .policy-language {
+              .language {
+                top: -83px;
+                right: 86px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .mobile {
+    .content {
+      .footer {
+        .footer__inner {
+          .policy {
+            .policy-list {
+              ul {
+                li {
+                  padding: 0 8px 0 8px;
+                  font-size: 14px;
+                }
+              }
+            }
+            .policy-language {
+              .language {
+                width: 92px;
+                height: 122px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,628 @@
+@charset "utf-8";
+
+@import "../scss/base/reset";
+
+.wrap {
+    .content {
+        width: 1033px;
+        margin: 0 auto;
+        position: relative;
+        top: 100px;
+        margin-bottom: 200px;
+        .layout-button {
+            position: absolute;
+            top: -14px;
+            right: -4px;
+            ul {
+                li {
+                    display: inline-block;
+                    padding-right: 20px;
+                    width: 40px;
+                    height: 40px;
+                }
+                .original {
+                    background: url("../../img/pages/total/item_original.png")
+                        center no-repeat;
+                    background-size: contain;
+                }
+                .two {
+                    background: url("../../img/pages/total/item_two.png") center
+                        no-repeat;
+                    background-size: contain;
+                }
+                .four {
+                    background: url("../../img/pages/total/item_four.png")
+                        center no-repeat;
+                    background-size: contain;
+                }
+                .list {
+                    background: url("../../img/pages/total/item_list.png")
+                        center no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+        .home-layout {
+            padding-top: 20px;
+            .original {
+                .home-layout__list {
+                    li {
+                        float: left;
+                        width: 33.33333%;
+                        height: auto;
+                        padding: 15px;
+                        box-sizing: border-box;
+                    }
+                    .home-item {
+                        a {
+                            position: relative;
+                            display: block;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            height: 520px;
+                            box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
+                            .home-item__thumnail {
+                                width: 100%;
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .home-item__info {
+                                position: relative;
+                                padding-left: 20px;
+                                padding-bottom: 20px;
+                                .item-tag {
+                                    display: inline-block;
+                                    height: 22px;
+                                    line-height: 22px;
+                                    font-size: 12px;
+                                    background: #fe000f;
+                                    color: #fff;
+                                    padding-right: 7px;
+                                    padding-left: 7px;
+                                }
+                                .item-title {
+                                    display: block;
+                                    width: 220px;
+                                    font-size: 17px;
+                                    color: #000000;
+                                    margin: 10px 0 15px 0;
+                                }
+                                .item-category {
+                                    display: inline-block;
+                                    font-size: 15px;
+                                    padding-bottom: 5px;
+                                }
+                                .item-price {
+                                    display: block;
+                                    font-size: 14px;
+                                }
+                                .review {
+                                    position: absolute;
+                                    top: 117px;
+                                    right: 20px;
+                                    .rating {
+                                        display: inline-block;
+                                        .star-wrap {
+                                            width: 18px;
+                                            display: inline-block;
+                                            .star {
+                                                position: relative;
+                                                width: 0;
+                                                overflow: hidden;
+                                                z-index: 2;
+                                                .fa-star {
+                                                    color: #f05522;
+                                                }
+                                            }
+                                            &:before {
+                                                content: " ";
+                                                width: 20px;
+                                                height: 20px;
+                                                display: inline-block;
+                                                position: absolute;
+                                                top: 2px;
+                                                z-index: 1;
+                                                background: url("../../img/pages/total/star.png")
+                                                    no-repeat;
+                                            }
+                                        }
+                                    }
+                                    .voter {
+                                        font-size: 13px;
+                                        position: relative;
+                                        top: 2px;
+                                        vertical-align: top;
+                                    }
+                                }
+                            }
+                            .item-pick {
+                                position: absolute;
+                                display: block;
+                                width: 30px;
+                                height: 30px;
+                                right: 20px;
+                                bottom: 148px;
+                                border: 0;
+                                background: url("../../img/pages/total/item__pick.png")
+                                    #fff center center no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+            .two {
+                .home-layout__list {
+                    li {
+                        float: left;
+                        width: 50%;
+                        height: auto;
+                        padding: 15px;
+                        box-sizing: border-box;
+                    }
+                    .home-item {
+                        a {
+                            position: relative;
+                            display: block;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            height: 700px;
+                            box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
+                            .home-item__thumnail {
+                                width: 100%;
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .home-item__info {
+                                position: relative;
+                                padding-left: 20px;
+                                padding-bottom: 20px;
+                                .item-tag {
+                                    display: inline-block;
+                                    height: 22px;
+                                    line-height: 22px;
+                                    font-size: 12px;
+                                    background: #fe000f;
+                                    color: #fff;
+                                    padding-right: 7px;
+                                    padding-left: 7px;
+                                }
+                                .item-title {
+                                    display: block;
+                                    width: 220px;
+                                    font-size: 17px;
+                                    color: #000000;
+                                    margin: 10px 0 15px 0;
+                                }
+                                .item-category {
+                                    display: inline-block;
+                                    font-size: 15px;
+                                    padding-bottom: 5px;
+                                }
+                                .item-price {
+                                    display: block;
+                                    font-size: 14px;
+                                }
+                                .review {
+                                    position: absolute;
+                                    top: 117px;
+                                    right: 20px;
+                                    .rating {
+                                        display: inline-block;
+                                        .star-wrap {
+                                            width: 18px;
+                                            display: inline-block;
+                                            .star {
+                                                position: relative;
+                                                width: 0;
+                                                overflow: hidden;
+                                                z-index: 2;
+                                                .fa-star {
+                                                    color: #f05522;
+                                                }
+                                            }
+                                            &:before {
+                                                content: " ";
+                                                width: 20px;
+                                                height: 20px;
+                                                display: inline-block;
+                                                position: absolute;
+                                                top: 2px;
+                                                z-index: 1;
+                                                background: url("../../img/pages/total/star.png")
+                                                    no-repeat;
+                                            }
+                                        }
+                                    }
+                                    .voter {
+                                        font-size: 13px;
+                                        position: relative;
+                                        top: 2px;
+                                        vertical-align: top;
+                                    }
+                                }
+                            }
+                            .item-pick {
+                                position: absolute;
+                                display: block;
+                                width: 30px;
+                                height: 30px;
+                                right: 20px;
+                                bottom: 156px;
+                                border: 0;
+                                background: url("../../img/pages/total/item__pick.png")
+                                    #fff center center no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+            .four {
+                .home-layout__list {
+                    li {
+                        float: left;
+                        width: 25%;
+                        height: auto;
+                        padding: 15px;
+                        box-sizing: border-box;
+                    }
+                    .home-item {
+                        a {
+                            position: relative;
+                            display: block;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            height: 480px;
+                            box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
+                            .home-item__thumnail {
+                                width: 100%;
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .home-item__info {
+                                position: relative;
+                                padding-left: 20px;
+                                padding-bottom: 20px;
+                                .item-tag {
+                                    display: inline-block;
+                                    height: 22px;
+                                    line-height: 22px;
+                                    font-size: 12px;
+                                    background: #fe000f;
+                                    color: #fff;
+                                    padding-right: 7px;
+                                    padding-left: 7px;
+                                }
+                                .item-title {
+                                    display: block;
+                                    width: 220px;
+                                    font-size: 15px;
+                                    color: #000000;
+                                    margin: 10px 0 15px 0;
+                                }
+                                .item-category {
+                                    display: inline-block;
+                                    font-size: 15px;
+                                    padding-bottom: 5px;
+                                }
+                                .item-price {
+                                    display: block;
+                                    font-size: 14px;
+                                }
+                                .review {
+                                    position: absolute;
+                                    top: 181px;
+                                    right: 63px;
+                                    .rating {
+                                        display: inline-block;
+                                        .star-wrap {
+                                            width: 18px;
+                                            display: inline-block;
+                                            .star {
+                                                position: relative;
+                                                width: 0;
+                                                overflow: hidden;
+                                                z-index: 2;
+                                                .fa-star {
+                                                    color: #f05522;
+                                                }
+                                            }
+                                            &:before {
+                                                content: " ";
+                                                width: 20px;
+                                                height: 20px;
+                                                display: inline-block;
+                                                position: absolute;
+                                                top: 2px;
+                                                z-index: 1;
+                                                background: url("../../img/pages/total/star.png")
+                                                    no-repeat;
+                                            }
+                                        }
+                                    }
+                                    .voter {
+                                        font-size: 13px;
+                                        position: relative;
+                                        top: 2px;
+                                        vertical-align: top;
+                                    }
+                                }
+                            }
+                            .item-pick {
+                                position: absolute;
+                                display: block;
+                                width: 30px;
+                                height: 30px;
+                                right: 20px;
+                                bottom: 197px;
+                                border: 0;
+                                background: url("../../img/pages/total/item__pick.png")
+                                    #fff center center no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+            .list {
+                .home-layout__list {
+                    li {
+                        float: left;
+                        width: 50%;
+                        height: auto;
+                        padding: 15px;
+                        box-sizing: border-box;
+                    }
+                    .home-item {
+                        a {
+                            position: relative;
+                            display: block;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            height: 350px;
+                            box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
+                            .home-item__thumnail {
+                                width: 260px;
+                                height: auto;
+                                float: left;
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .home-item__info {
+                                position: relative;
+                                float: right;
+                                margin-top: 42px;
+                                .item-tag {
+                                    display: inline-block;
+                                    height: 22px;
+                                    line-height: 22px;
+                                    font-size: 12px;
+                                    background: #fe000f;
+                                    color: #fff;
+                                    padding-right: 7px;
+                                    padding-left: 7px;
+                                }
+                                .item-title {
+                                    display: block;
+                                    width: 220px;
+                                    font-size: 19px;
+                                    color: #000000;
+                                    margin: 10px 0 10px 0;
+                                }
+                                .item-category {
+                                    display: block;
+                                    padding-bottom: 5px;
+                                }
+                                .item-price {
+                                    display: block;
+                                }
+                                .review {
+                                    position: absolute;
+                                    top: 207px;
+                                    right: 58px;
+                                    width: 160px;
+                                    .rating {
+                                        float: left;
+                                        .star-wrap {
+                                            width: 18px;
+                                            display: inline-block;
+                                            .star {
+                                                position: relative;
+                                                width: 0;
+                                                overflow: hidden;
+                                                z-index: 2;
+                                                .fa-star {
+                                                    color: #f05522;
+                                                }
+                                            }
+                                            &:before {
+                                                content: " ";
+                                                width: 20px;
+                                                height: 20px;
+                                                display: inline-block;
+                                                position: absolute;
+                                                top: 2px;
+                                                z-index: 1;
+                                                background: url("../../img/pages/total/star.png")
+                                                    no-repeat;
+                                            }
+                                        }
+                                    }
+                                    .voter {
+                                        float: right;
+                                    }
+                                    &:after {
+                                        content: " ";
+                                        display: block;
+                                        clear: both;
+                                    }
+                                }
+                                .item-pick {
+                                    position: absolute;
+                                    display: block;
+                                    width: 30px;
+                                    height: 30px;
+                                    top: 189px;
+                                    right: 20px;
+                                    bottom: 112px;
+                                    border: 0;
+                                    background: url("../../img/pages/total/item__pick.png")
+                                        #fff center center no-repeat;
+                                }
+                            }
+                            &:after {
+                                content: " ";
+                                display: block;
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+            &:after {
+                content: " ";
+                display: block;
+                clear: both;
+            }
+        }
+        .click-to-top {
+            .btn-top {
+                display: none;
+                position: fixed;
+                right: 31px;
+                bottom: 120px;
+                width: 48px;
+                height: 47px;
+                background: #fff;
+                background: url("../../img/pages/total/btn_to_top.png") center
+                    center no-repeat;
+            }
+        }
+    }
+}
+
+@media (min-width: 2101px) {
+    .wrap {
+        .content {
+            .click-to-top {
+                .btn-top {
+                    right: 594px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1901px) and (max-width: 2100px) {
+    .wrap {
+        .content {
+            .click-to-top {
+                .btn-top {
+                    right: 350px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1801px) and (max-width: 1900px) {
+    .wrap {
+        .content {
+            .click-to-top {
+                .btn-top {
+                    right: 244px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1701px) and (max-width: 1800px) {
+    .wrap {
+        .content {
+            .click-to-top {
+                .btn-top {
+                    right: 176px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 1700px) {
+    .wrap {
+        .content {
+            .click-to-top {
+                .btn-top {
+                    right: 166px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1501px) and (max-width: 1600px) {
+    .wrap {
+        .content {
+            .click-to-top {
+                .btn-top {
+                    right: 120px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1471px) and (max-width: 1500px) {
+    .wrap {
+        .content {
+            .click-to-top {
+                .btn-top {
+                    right: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1470px) {
+    .wrap {
+        .content {
+            .click-to-top {
+                .btn-top {
+                    right: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1241px) and (max-width: 1280px) {
+    .wrap {
+        .content {
+            .click-to-top {
+                .btn-top {
+                    right: 31px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1070px) and (max-width: 1240px) {
+    .wrap {
+        .content {
+            .click-to-top {
+                .btn-top {
+                    right: 31px;
+                }
+            }
+        }
+    }
+}

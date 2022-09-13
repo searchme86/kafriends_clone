@@ -1,0 +1,443 @@
+@charset "utf-8";
+
+@import "../scss/base/reset";
+
+body {
+    font-family: "NotoSans Light", "Malgun Gothic", "맑은 고딕",
+        "Apple SD Gothic Neo", "돋움", dotum, sans-serif;
+}
+
+.wrap {
+    .content {
+        width: 950px;
+        margin: 0 auto;
+        .loginForm {
+            width: 100%;
+            position: relative;
+            h1 {
+                font-size: 18px;
+                margin-bottom: 22px;
+            }
+            .basic {
+                &__title {
+                    display: block;
+                    margin-bottom: 22px;
+                }
+                &__direction {
+                    margin-bottom: 17px;
+                }
+                &__info {
+                    border-top: 1px solid #d80546;
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        th {
+                            text-align: left;
+                            .essential {
+                                display: inline-block;
+                                width: 7px;
+                                height: 6px;
+                                margin-left: 13px;
+                                background: url("/assets/img/main/loginForm/essential.png")
+                                    no-repeat;
+                            }
+                            width: 142px;
+                            background: #ffe500;
+                            border-bottom: 1px solid #e0dcd2;
+                            label {
+                                display: inline-block;
+                                font-size: 13px;
+                                color: #5d1d1e;
+                            }
+                        }
+                        td {
+                            border-bottom: 1px solid #e0dcd2;
+                            .input-area {
+                                position: relative;
+                                margin: 8px 0 8px 10px;
+                                select {
+                                    display: inline-block;
+                                    width: 150px;
+                                    vertical-align: top;
+                                    padding: 10px 0 9px 3px;
+                                    font-size: 12px;
+                                    font-weight: bold;
+                                    color: #757575;
+                                    border: 1px solid #cdc9be;
+                                    -webkit-appearnce: none;
+                                    -moz-apperarnce: none;
+                                    appearance: none;
+                                    background: url("/assets/img/main/loginForm/select_down.png")
+                                        50% 50% no-repeat;
+                                }
+                                select::-ms-expand {
+                                    display: none;
+                                }
+                                input {
+                                    display: inline-block;
+                                    width: 182px;
+                                    padding: 10px 0 9px 5px;
+                                    font-size: 12px;
+                                    vertical-align: top;
+                                    color: #757575;
+                                    border: 1px solid #cdc9be;
+                                }
+                                .input-korean {
+                                    width: 110px;
+                                    font-size: 12px;
+                                    color: #757575;
+                                    padding: 10px 0 9px 4px;
+                                    border: 1px solid #cdc9be;
+                                }
+                                .input-korean--last {
+                                    width: 120px;
+                                }
+                                .input-american {
+                                    width: 110px;
+                                    font-size: 12px;
+                                    color: #757575;
+                                    padding: 10px 0 9px 4px;
+                                    border: 1px solid #cdc9be;
+                                }
+                                img {
+                                    position: absolute;
+                                    display: block;
+                                    width: 20px;
+                                    height: 20px;
+                                    top: 8px;
+                                    left: 147px;
+                                }
+                                & + .input-info {
+                                    margin-bottom: 5px;
+                                }
+                                & + .input-info + .input-info {
+                                    margin-bottom: 5px;
+                                }
+                            }
+
+                            .input-info {
+                                margin: 0 0 20px 10px;
+                                font-size: 10px;
+                                .bold {
+                                    color: red;
+                                    font-weight: bold;
+                                }
+                            }
+
+                            .check-area {
+                                margin: 10px 0 7px 10px;
+                                .certification-num {
+                                    display: inline-block;
+                                    background: #f6f6f6;
+                                    border: 0;
+                                    outline: none;
+                                    height: 33px;
+                                    line-height: 33px;
+                                    span {
+                                        color: #575757;
+                                        font-size: 13px;
+                                        padding: 0 16px 0 16px;
+                                    }
+                                }
+                                .fill-certification-num {
+                                    display: inline-block;
+                                    width: 127px;
+                                    height: 33px;
+                                    border: 1px solid #cdc9be;
+                                    text-align: center;
+                                }
+                                .confirm-btn {
+                                    display: inline-block;
+                                    position: relative;
+                                    top: 2px;
+                                    width: 69px;
+                                    height: 33px;
+                                    text-align: center;
+                                    background: #3c404b;
+                                    span {
+                                        color: #fff;
+                                        line-height: 33px;
+                                    }
+                                }
+                                .confirm-direction {
+                                    margin: 5px 0 10px 0;
+                                    p {
+                                        font-size: 10px;
+                                        color: #717171;
+                                        &:nth-child(2) {
+                                            padding: 5px 0 5px 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .newsletter {
+                    margin-top: 24px;
+                    &__intro {
+                        position: relative;
+                        font-size: 12px;
+                        color: #1a1d1e;
+                        padding-left: 6px;
+                        &:before {
+                            content: " ";
+                            position: absolute;
+                            top: 5px;
+                            left: 0;
+                            display: block;
+                            width: 2px;
+                            height: 2px;
+                            background: #d80546;
+                        }
+                    }
+                    &__agree {
+                        margin-top: 18px;
+                        input {
+                            position: relative;
+                            top: 2px;
+                            vertical-align: top;
+                        }
+                        label {
+                            vertical-align: top;
+                            font-size: 11px;
+                            color: #1a1d1e;
+                        }
+                    }
+                }
+            }
+            .interests {
+                width: 100%;
+                &__title {
+                    display: block;
+                    margin: 59px 0 25px 0;
+                }
+                &__direction {
+                    font-size: 11px;
+                    padding-bottom: 6px;
+                }
+                &__info {
+                    table {
+                        border-collapse: collapse;
+                        th {
+                            width: 171px;
+                            text-align: left;
+                            font-size: 13px;
+                            background: #ffe500;
+                            label {
+                                padding-left: 13px;
+                            }
+                        }
+                        td {
+                            .select-choice {
+                                select {
+                                    display: inline-block;
+                                    width: 190px;
+                                    padding: 10px 0 9px 14px;
+                                    margin: 10px 0 8px 10px;
+                                    -webkit-appearance: none;
+                                    -moz-appearance: none;
+                                    appearance: none;
+                                    background: url("/assets/img/main/loginForm/select_down.png")
+                                        86% 50% no-repeat;
+                                    border: 1px solid #cdc9be;
+                                }
+                                select::-ms-expand {
+                                    display: none;
+                                }
+                            }
+                            .select-info {
+                                margin-left: 10px;
+                                font-size: 10px;
+                            }
+                        }
+                        .price-area {
+                            .select-choice {
+                                font-size: 0;
+                                select:first-child {
+                                    margin-right: 10px;
+                                }
+                                span {
+                                    display: inline-block;
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &__ad {
+                    margin-top: 24px;
+                    .ad-title {
+                        position: relative;
+                        font-size: 12px;
+                        color: #1a1d1e;
+                        padding-left: 6px;
+                        &:before {
+                            content: " ";
+                            position: absolute;
+                            top: 5px;
+                            left: 0;
+                            display: block;
+                            width: 2px;
+                            height: 2px;
+                            background: #d80546;
+                        }
+                    }
+                    .ad-contact {
+                        margin: 10px 0 43px 0;
+                        label {
+                            font-size: 12px;
+                            color: #1a1d1e;
+                            position: relative;
+                            top: -2px;
+                        }
+                    }
+                    .ad-detail {
+                        position: relative;
+                        font-size: 12px;
+                        color: #1a1d1e;
+                        padding-left: 6px;
+                        &:before {
+                            content: " ";
+                            position: absolute;
+                            top: 5px;
+                            left: 0;
+                            display: block;
+                            width: 2px;
+                            height: 2px;
+                            background: #d80546;
+                        }
+                    }
+                }
+            }
+            .request {
+                &__title {
+                    display: block;
+                    margin: 85px 0 18px 0;
+                    font-size: 18px;
+                }
+                &__direction {
+                    position: relative;
+                    border-top: 1px solid #d80546;
+                    padding-top: 6px;
+                    font-size: 12px;
+                    color: #1a1d1e;
+                    padding-left: 20px;
+                    &:before {
+                        position: absolute;
+                        display: block;
+                        content: "";
+                        width: 15px;
+                        height: 15px;
+                        top: 6px;
+                        left: 0;
+                        background: url("/assets/img/main/loginForm/here.png")
+                            no-repeat;
+                    }
+                }
+            }
+            .confirm {
+                position: absolute;
+                display: block;
+                width: 96px;
+                height: 38px;
+                right: 0;
+                bottom: 88px;
+                background: #3c404b;
+                span {
+                    line-height: 38px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1090px) {
+}
+
+@media screen and (max-width: 1066px) {
+}
+
+@media screen and (max-width: 1066px) {
+}
+
+@media screen and (max-width: 910px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+##Device = 데스크탑
+##Screen = 1281px 이상 해상도 데스크탑
+*/
+
+@media (min-width: 1281px) {
+    //CSS
+}
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+##Device = 랩탑, 데스크탑
+##Screen = 1025px에서 1280px 사이
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    //CSS
+}
+
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(세로),
+##Screen = 768px에서 1024px 사이
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    //CSS
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(가로)
+##Screen = 768px에서 1024px 사이
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    //CSS
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+##Device = 저해상도 태블릿, 모바일(가로)
+##Screen = 481px에서 767px 사이
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    //CSS
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+##Screen = 320px에서 479px 사이
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    //CSS
+}

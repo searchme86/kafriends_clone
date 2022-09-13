@@ -1,0 +1,241 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+.wrap .content .layout {
+  padding: 0 85px 0 85px;
+}
+
+.wrap .content .layout .left {
+  float: left;
+}
+
+.wrap .content .layout .right {
+  float: right;
+  padding-left: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .content .layout .size-big {
+  width: 66.55%;
+  position: relative;
+  padding: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .content .layout .size-big .item-thumnail {
+  width: 100%;
+}
+
+.wrap .content .layout .size-big .item-thumnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .content .layout .size-big .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.wrap .content .layout .size-big.on .info {
+  display: block;
+}
+
+.wrap .content .layout .size-big.on .overlay {
+  display: none;
+}
+
+.wrap .content .layout .size-small {
+  width: 33.3%;
+  padding: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .content .layout .size-small .item-thumnail {
+  width: 100%;
+}
+
+.wrap .content .layout .size-small .item-thumnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .content .layout .size-small .unit {
+  position: relative;
+  padding-bottom: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .content .layout .size-small .unit .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.wrap .content .layout .size-small .unit.on .info {
+  display: block;
+}
+
+.wrap .content .layout .size-small .unit.on .overlay {
+  display: none;
+}
+
+.wrap .content .layout ul li {
+  position: relative;
+  float: left;
+  width: 33.3333%;
+  height: 100%;
+  padding: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .content .layout ul li .item-thumnail {
+  width: 100%;
+}
+
+.wrap .content .layout ul li .item-thumnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .content .layout ul li .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.wrap .content .layout ul li.on .overlay {
+  display: none;
+}
+
+.wrap .content .layout ul:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrap .content .layout:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrap .content .click-to-top .btn-top {
+  display: none;
+  position: fixed;
+  width: 12.8vw;
+  height: 12.533333333333333vw;
+  bottom: 0;
+  z-index: 11;
+  background: url("../../img/pages/store/btn_to_top.png") center center no-repeat;
+}

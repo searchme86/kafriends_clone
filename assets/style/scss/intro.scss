@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+@import "../scss/base/reset";
+
+.wrap {
+    position: relative;
+    .content {
+        position: relative;
+        .intro-header {
+            width: 100%;
+            background: #fddc2f;
+            .intro-txt {
+                width: 1060px;
+                height: 480px;
+                margin: 0 auto;
+                background: url("../../img/pages/intro/bg_kakao_friends.png")
+                    bottom center no-repeat;
+                background-size: contain;
+                .intro-logo {
+                    width: 226px;
+                    padding-top: 80px;
+                    padding-left: 24px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .intro-title {
+                    font-size: 25px;
+                    padding-top: 20px;
+                    padding-left: 24px;
+                    color: #fff;
+                    line-height: 1.5;
+                    font-weight: bold;
+                    text-shadow: 0 1px 1px #000;
+                }
+            }
+        }
+        .intro-content {
+            width: 1000px;
+            margin: 0 auto;
+            padding-top: 80px;
+            position: relative;
+            .intro-aside {
+                display: block;
+                position: absolute;
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 1.7;
+                left: 0;
+            }
+            .intro-main {
+                float: right;
+                width: 730px;
+                .intro-message {
+                    padding-top: 46px;
+                    .message {
+                        font-size: 14px;
+                        color: #9a9a9a;
+                        line-height: 1.6;
+                        .message-left {
+                            float: left;
+                            width: 301px;
+                            padding-bottom: 80px;
+                        }
+                        .message-right {
+                            float: right;
+                            width: 335px;
+                            .btn-more {
+                                display: block;
+                                width: 134px;
+                                height: 38px;
+                                margin-top: 34px;
+                                background: url("../../img/pages/intro/btn_more.png")
+                                    #fff center right 16px no-repeat;
+                                border: 1px solid #000;
+                                span {
+                                    display: block;
+                                    line-height: 38px;
+                                    font-size: 13px;
+                                    padding-left: 19px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                        .info_subject {
+                            display: block;
+                            color: #000;
+                            font-size: 15px;
+                            padding-bottom: 19px;
+                        }
+                        &:after {
+                            content: " ";
+                            display: block;
+                            clear: both;
+                        }
+                    }
+                    .message-bottom {
+                        padding-bottom: 260px;
+                    }
+                }
+            }
+            &:after {
+                content: " ";
+                display: block;
+                clear: both;
+            }
+        }
+    }
+}
+
+@media (min-width: 1281px) {
+    .wrap {
+        .content {
+            .intro-header {
+                .intro-txt {
+                    width: 1200px;
+                }
+            }
+            .intro-content {
+                width: 1200px;
+                .intro-aside {
+                    padding-left: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1280px) {
+    .wrap {
+        .content {
+            .intro-header {
+                .intro-txt {
+                    width: 1180px;
+                }
+            }
+            .intro-content {
+                width: 1180px;
+                .intro-aside {
+                    padding-left: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .wrap {
+        .content {
+            .intro-header {
+                .intro-txt {
+                    width: 1060px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .wrap {
+        position: relative;
+        .content {
+            .intro-header {
+                .intro-txt {
+                    width: 751px;
+                    height: 396px;
+                    .intro-logo {
+                        padding-top: 30px;
+                    }
+                    .intro-title {
+                        font-size: 25px;
+                        padding-top: 6px;
+                    }
+                }
+            }
+            .intro-content {
+                width: 750px;
+                padding-top: 30px;
+                .intro-aside {
+                    position: static;
+                    left: 0;
+                    padding-left: 18px;
+                }
+                .intro-main {
+                    float: none;
+                    width: 700px;
+                    margin-top: 30px;
+                    margin-left: 18px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+@import "../scss/base/reset";
+@import "../scss/base/font";
+@import "../scss/base/space";
+@import "../scss/base/shape";
+@import "../scss/base/border";
+@import "../scss/base/color";
+@import "../scss/mixin/item";
+@import "../scss/mixin/rem";
+
+html,
+body {
+    font-size: 15px;
+    font-family: NotoSans-Regular, AppleSDGothicNeo-Regular, "맑은 고딕",
+        Malgun Gothic, "돋움", dotum, sans-serif;
+}
+
+.mobile {
+    .content {
+        &__inner {
+            padding: 0 4.266666666666667vw 0 4.266666666666667vw;
+            box-sizing: border-box;
+            .content__friends {
+                .friends-title {
+                    @include rem(19);
+                    text-align: center;
+                    padding: 8vw 0 3.2vw 0;
+                }
+                .friends-category {
+                    li {
+                        float: left;
+                        width: 50%;
+                        height: auto;
+                        padding: 1.3333333333333335vw;
+                        box-sizing: border-box;
+                        a {
+                            display: block;
+                            width: auto;
+                            border-radius: 2.666666666666667vw;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                            .friends-description {
+                                display: block;
+                                @include rem(13);
+                                font-weight: bold;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                padding: 1.3333333333333335vw 0 0
+                                    1.3333333333333335vw;
+                                box-sizing: border-box;
+                            }
+                        }
+                    }
+                    &:after {
+                        content: " ";
+                        display: block;
+                        clear: both;
+                    }
+                }
+                .friends-sale {
+                    .sale-title {
+                        display: block;
+                        text-align: center;
+                        @include rem(19);
+                        padding: 8vw 0 3.2vw 0;
+                        box-sizing: border-box;
+                    }
+                    ul {
+                        li {
+                            position: relative;
+                            margin: 0 auto;
+                            width: 100%;
+                            height: auto;
+                            box-shadow: rgba(0, 0, 0, 0.2) 0px
+                                1.3333333333333335vw 3.4666666666666663vw;
+                            .sale-thumnail {
+                                width: 100%;
+                                height: auto;
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .sale-info {
+                                padding: 5.6000000000000005vw
+                                    5.333333333333334vw 3.733333333333334vw
+                                    3.733333333333334vw;
+                                box-sizing: border-box;
+                                font-size: 0;
+                                .item-title {
+                                    @include rem(16);
+                                    padding: 1.6vw 0 1.6vw 1.6vw;
+                                    box-sizing: border-box;
+                                }
+                                .item-discount,
+                                .item-price,
+                                .item-original {
+                                    display: inline-block;
+                                    @include rem(22);
+                                    color: #ff447f;
+                                    font-weight: bold;
+                                    padding-right: 1.3333333333333335vw;
+                                }
+                                .item-discount {
+                                    padding-left: 1.6vw;
+                                    text-align: left;
+                                }
+                                .item-original {
+                                    @include rem(15);
+                                    color: #a2a2a5;
+                                    text-decoration: line-through;
+                                }
+                            }
+                            .item-pick {
+                                position: absolute;
+                                display: block;
+                                width: 5.333333333333334vw;
+                                height: 6.4vw;
+                                right: 6.933333333333333vw;
+                                bottom: 9.333333333333334vw;
+                                background: url("../../img/index/itme-pick.png")
+                                    no-repeat;
+                            }
+                            margin-bottom: 5.333333333333334vw;
+                        }
+                    }
+                }
+                .today-keywords {
+                    padding-bottom: 10.666666666666668vw;
+                    .today-title {
+                        display: block;
+                        @include rem(19);
+                        text-align: center;
+                        padding: 8vw 0 3.2vw 0;
+                        box-sizing: border-box;
+                    }
+                    ul {
+                        li {
+                            display: inline-block;
+                            line-height: 9.067vw;
+                            border: 1px solid #dddddd;
+                            border-radius: 2.666666666666667vw;
+                            padding: 0 4.2vw;
+                            letter-spacing: -0.26666666666666666vw;
+                            margin-top: 2.666666666666667vw;
+                            a {
+                                display: inline-block;
+                                @include rem(13);
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+            .click-to-top {
+                .btn-top {
+                    display: none;
+                    position: fixed;
+                    width: 12.8vw;
+                    height: 12.533333333333333vw;
+                    bottom: 0;
+                    z-index: 11;
+                    background: url("../../img/pages/store/btn_to_top.png")
+                        center center no-repeat;
+                }
+            }
+        }
+    }
+}

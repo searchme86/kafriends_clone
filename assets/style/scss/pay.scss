@@ -1,0 +1,608 @@
+@charset "utf-8";
+
+@import "../scss/base/reset";
+
+body {
+    font-family: "NotoSans Light", "Malgun Gothic", "맑은 고딕",
+        "Apple SD Gothic Neo", "돋움", dotum, sans-serif;
+}
+
+.wrap {
+    .content {
+        .pay {
+            width: 640px;
+            margin: 0 auto;
+            padding: 72px 0 247px 0;
+            .pay-section {
+                border-top: 1px solid #000000;
+                padding-bottom: 35px;
+                .pay-title {
+                    display: block;
+                    font-size: 23px;
+                    margin: 28px 0 28px 0;
+                }
+                .item-header {
+                    width: 100%;
+                    border-bottom: 1px solid #f5f6f6;
+                    padding-bottom: 15px;
+                    .item-thumnail {
+                        float: left;
+                        width: 100px;
+                        height: 100px;
+                        background: #fafafa;
+                        border-radius: 7px;
+                        margin-right: 14px;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .itme-info {
+                        float: left;
+                        width: 526px;
+                        position: relative;
+                        height: 80px;
+                        .item-name {
+                            font-size: 13px;
+                            padding: 6px 0 46px 0;
+                        }
+                        select {
+                            display: inline-block;
+                            width: 64px;
+                            height: 31px;
+                            padding-left: 11px;
+                            box-sizing: border-box;
+                            border: 1px solid #e3e5e8;
+                            border-radius: 3px;
+                            background: #fff;
+                            font-size: 14px;
+                            -webkit-appearnce: none;
+                            -moz-apperarnce: none;
+                            appearance: none;
+                            background: url("../../img/pages/pay/form__select__down.png")
+                                center right 8px no-repeat;
+                        }
+                        select::-ms-expand {
+                            display: none;
+                        }
+                        .total-price {
+                            position: absolute;
+                            top: 66px;
+                            right: 3px;
+                            display: inline-block;
+                            font-size: 14px;
+                            .price-unit {
+                                font-size: 13px;
+                            }
+                        }
+                        .btn-item-delete {
+                            display: block;
+                            width: 11px;
+                            height: 10px;
+                            background: #fff;
+                            position: absolute;
+                            top: 11px;
+                            right: 3px;
+                            background: url("../../img/pages/pay/btn__item__delete.png")
+                                no-repeat;
+                        }
+                    }
+                    &:after {
+                        content: " ";
+                        display: block;
+                        clear: both;
+                    }
+                }
+                .pay-item {
+                    padding-top: 30px;
+                    li {
+                        padding-bottom: 10px;
+                        .form-left {
+                            position: relative;
+                            float: left;
+                            display: block;
+                            width: 50%;
+                            text-align: left;
+                            font-size: 15px;
+                            .point {
+                                display: block;
+                                position: absolute;
+                                width: 101px;
+                                top: 15px;
+                                left: 0;
+                                .pointNum {
+                                    display: inline-block;
+                                    color: #3f87ff;
+                                    font-size: 12px;
+                                    font-weight: bold;
+                                    vertical-align: top;
+                                    position: relative;
+                                    top: 1px;
+                                    .initial-Point {
+                                        display: inline;
+                                    }
+                                }
+                            }
+                            .gift {
+                                display: inline-block;
+                                width: 86px;
+                                position: absolute;
+                                top: 12px;
+                                left: 0;
+                            }
+                        }
+                        .form-right {
+                            float: right;
+                            display: block;
+                            width: 50%;
+                            text-align: right;
+                            .pointBox {
+                                position: relative;
+                                input[type="number"] {
+                                    display: block;
+                                    width: 320px;
+                                    height: 45px;
+                                    line-height: 45px;
+                                    text-align: right;
+                                    border: 1px solid #e3e5e8;
+                                    border-radius: 7px;
+                                    padding-right: 12px;
+                                    box-sizing: border-box;
+                                    font-size: 17px;
+                                }
+                                &:before {
+                                    display: block;
+                                    content: "-";
+                                    position: absolute;
+                                    top: 14px;
+                                    left: 17px;
+                                }
+                            }
+                        }
+                        .btn-card {
+                            display: block;
+                            width: 100px;
+                            height: 46px;
+                            line-height: 46px;
+                            background: #eff0f4;
+                            font-size: 14px;
+                            text-align: center;
+                            border-radius: 7px;
+                        }
+                        .item-total {
+                            display: block;
+                            font-size: 14px;
+                            .price-unit {
+                                font-size: 14px;
+                            }
+                        }
+                        .price-total {
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                        .final-added {
+                            font-size: 15px;
+                            font-weight: bold;
+                        }
+                        .pay-total {
+                            font-size: 24px;
+                            font-weight: bold;
+                        }
+                        .delivery-price {
+                            font-size: 14px;
+                            color: #9a9a9e;
+                        }
+                        .payMethod {
+                            .method-title {
+                                display: block;
+                                font-size: 15px;
+                                font-weight: bold;
+                                padding-bottom: 19px;
+                            }
+                            .credit {
+                                .credit-tab {
+                                    margin-bottom: 15px;
+                                    .credit-tablist {
+                                        > li {
+                                            float: left;
+                                            width: 50%;
+                                            height: 116px;
+                                            line-height: 150px;
+                                            box-sizing: border-box;
+                                            padding-top: 10px;
+                                            text-align: center;
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                            border: 2px solid #e3e5e8;
+                                            &.on {
+                                                border: 2px solid #000000;
+                                            }
+                                        }
+                                        .btn-kakao {
+                                            background: url("../../img/pages/pay/credit__kako_unselected.png")
+                                                top 37px center no-repeat;
+                                        }
+                                        .btn-credit {
+                                            background: url("../../img/pages/pay/credit__card_unselected.png")
+                                                top 37px center no-repeat;
+                                        }
+                                        &:after {
+                                            content: " ";
+                                            display: block;
+                                            clear: both;
+                                        }
+                                    }
+                                }
+                                .credit-content {
+                                    margin-bottom: 20px;
+                                    .credit-list {
+                                        .kapay-area {
+                                            position: relative;
+                                            padding-bottom: 26px;
+                                            p {
+                                                width: 640px;
+                                                height: 39px;
+                                                font-size: 13px;
+                                                line-height: 39px;
+                                                background: #ffea01;
+                                                border-radius: 32px;
+                                                text-align: center;
+                                            }
+                                            &:before {
+                                                position: absolute;
+                                                content: " ";
+                                                display: block;
+                                                width: 10px;
+                                                height: 9px;
+                                                top: -9px;
+                                                left: 158px;
+                                                background: url("../../img/pages/pay/kapay_design.png")
+                                                    no-repeat;
+                                            }
+                                        }
+                                        ul {
+                                            > li {
+                                                position: relative;
+                                                padding-bottom: 12px;
+                                                .agreement {
+                                                    input[type="checkbox"]
+                                                        + label
+                                                        span {
+                                                        display: inline-block;
+                                                        height: 25px;
+                                                        line-height: 25px;
+                                                        padding: 1px 0 0 36px;
+                                                        box-sizing: border-box;
+                                                        font-size: 15px;
+                                                        vertical-align: top;
+                                                        background: url("../../img/pages/pay/agreement_unckecked.png")
+                                                            no-repeat;
+                                                        cursor: pointer;
+                                                    }
+
+                                                    input[type="checkbox"]:checked {
+                                                        & + label span {
+                                                            background: url("../../img/pages/pay/agreement_ckecked.png")
+                                                                no-repeat;
+                                                        }
+                                                    }
+                                                    .agreeLabel {
+                                                        display: inline-block;
+                                                        position: absolute;
+                                                        top: 4px;
+                                                        margin-left: 8px;
+                                                        color: #9a9a9e;
+                                                        font-size: 13px;
+                                                    }
+                                                    .underline {
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                                &:last-child {
+                                                    padding-top: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &:after {
+                            content: "";
+                            display: block;
+                            clear: both;
+                        }
+                    }
+                }
+            }
+            .item {
+                border-top: 0;
+            }
+            .address {
+                border-top: 1px solid #000000;
+                .address-header {
+                    padding-bottom: 10px;
+                    .item-receiver {
+                        float: left;
+                        display: block;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                    .check-address {
+                        float: right;
+                        label span {
+                            display: inline-block;
+                            width: 100%;
+                            height: 29px;
+                            line-height: 26px;
+                            padding-left: 32px;
+                            font-size: 13px;
+                            vertical-align: top;
+                            background: url("../../img/pages/pay/agreement_unckecked.png")
+                                no-repeat;
+                            cursor: pointer;
+                        }
+
+                        input[type="checkbox"]:checked {
+                            & + label span {
+                                background: url("../../img/pages/pay/agreement_ckecked.png")
+                                    no-repeat;
+                            }
+                        }
+                    }
+                    &:after {
+                        content: " ";
+                        display: block;
+                        clear: both;
+                    }
+                }
+                .item-inputBox {
+                    .selectBox {
+                        select {
+                            display: block;
+                            width: 100%;
+                            height: 42px;
+                            line-height: 42px;
+                            padding-left: 13px;
+                            box-sizing: border-box;
+                            border: 1px solid #e3e5e8;
+                            border-radius: 4px;
+                            background: #fff;
+                            font-size: 12px;
+                            margin: 0 0 6px 0;
+                            -webkit-appearnce: none;
+                            -moz-apperarnce: none;
+                            appearance: none;
+                            background: url("../../img/pages/pay/form__select__down.png")
+                                center right 11px no-repeat;
+                        }
+                        select::-ms-expand {
+                            display: none;
+                        }
+                    }
+                    .inputBox {
+                        width: auto;
+                        position: relative;
+                        input {
+                            position: relative;
+                            display: block;
+                            width: 100%;
+                            height: 42px;
+                            line-height: 42px;
+                            border: 1px solid #e3e5e8;
+                            border-radius: 4px;
+                            background: #fff;
+                            margin-bottom: 6px;
+                            font-size: 12px;
+                            color: #e3e5e8;
+                            padding-left: 13px;
+                            box-sizing: border-box;
+                        }
+                        textarea {
+                            display: block;
+                            width: 100%;
+                            height: 80px;
+                            resize: none;
+                            border: 1px solid #e3e5e8;
+                            border-radius: 2px;
+                            background: #fff;
+                            border-radius: 4px;
+                            padding: 15px;
+                            box-sizing: border-box;
+                        }
+                        .limit {
+                            font-size: 11px;
+                            color: #9a9a9a;
+                            padding: 6px 0 39px 0;
+                        }
+                        &:before {
+                            display: block;
+                            content: " ";
+                            width: 6px;
+                            height: 5px;
+                            position: absolute;
+                            top: 8px;
+                            left: 5px;
+                            background: url("../../img/pages/pay/input__important.png")
+                                no-repeat;
+                            z-index: 222;
+                        }
+                    }
+                    .save-address {
+                        font-size: 12px;
+                        padding-bottom: 10px;
+                        position: relative;
+                        input[type="checkbox"] + label span {
+                            display: inline-block;
+                            width: 100%;
+                            height: 29px;
+                            line-height: 26px;
+                            padding-left: 32px;
+                            font-size: 13px;
+                            vertical-align: top;
+                            background: url("../../img/pages/pay/agreement_unckecked.png")
+                                no-repeat;
+                            cursor: pointer;
+                        }
+
+                        input[type="checkbox"]:checked {
+                            & + label span {
+                                background: url("../../img/pages/pay/agreement_ckecked.png")
+                                    no-repeat;
+                            }
+                        }
+                    }
+
+                    .form-notice {
+                        border-top: 1px solid #f2f2f2;
+                        padding-top: 20px;
+                        .planned-date {
+                            font-size: 14px;
+                            padding-left: 23px;
+                            background: url("../../img/pages/pay/item__delivery.png")
+                                top 3px left no-repeat;
+                        }
+                        .remind {
+                            font-size: 10px;
+                            color: #9a9a9e;
+                            padding-top: 10px;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+            .money {
+                padding-bottom: 0;
+                .money-header {
+                    position: relative;
+                    .point {
+                        display: block;
+                        position: absolute;
+                        top: 9px;
+                        right: 0;
+                        font-size: 13px;
+                        color: #9a9a9e;
+                        text-decoration: underline;
+                    }
+                }
+                .pay-item {
+                    padding-top: 0;
+                }
+                ul {
+                    li {
+                        &:nth-child(5) {
+                            padding-bottom: 22px;
+                            border-bottom: 1px solid #f5f6f6;
+                        }
+
+                        &:last-child {
+                            padding-top: 30px;
+                        }
+                    }
+                }
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+            .btn-pay-for {
+                display: block;
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+                border-radius: 10px;
+                background: #d4d7e1;
+                color: #fff;
+                font-weight: bold;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1090px) {
+}
+
+@media screen and (max-width: 1066px) {
+}
+
+@media screen and (max-width: 1066px) {
+}
+
+@media screen and (max-width: 910px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+##Device = 데스크탑
+##Screen = 1281px 이상 해상도 데스크탑
+*/
+
+@media (min-width: 1281px) {
+    //CSS
+}
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+##Device = 랩탑, 데스크탑
+##Screen = 1025px에서 1280px 사이
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    //CSS
+}
+
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(세로),
+##Screen = 768px에서 1024px 사이
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    //CSS
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(가로)
+##Screen = 768px에서 1024px 사이
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    //CSS
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+##Device = 저해상도 태블릿, 모바일(가로)
+##Screen = 481px에서 767px 사이
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    //CSS
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+##Screen = 320px에서 479px 사이
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    //CSS
+}

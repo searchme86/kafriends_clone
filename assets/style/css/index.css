@@ -1,0 +1,276 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+.wrap {
+  background: #ffc333;
+  position: relative;
+}
+
+.wrap header {
+  width: 100%;
+}
+
+.wrap header .header-content {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+  top: 20px;
+}
+
+.wrap header .header-content h1 {
+  float: left;
+  margin: 28px 0 0 30px;
+}
+
+.wrap header .header-content h1 .kafrineds-logo {
+  width: 80px;
+}
+
+.wrap header .header-content h1 .kafrineds-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.wrap header .header-content nav {
+  display: block;
+  float: right;
+  margin: 27px 0 0 37px;
+}
+
+.wrap header .header-content nav ul {
+  font-size: 0;
+}
+
+.wrap header .header-content nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.wrap header .header-content nav ul li a {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.wrap header .header-content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrap .content {
+  position: relative;
+  height: 920px;
+}
+
+.wrap .content .video-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1033px;
+  margin: 0 auto;
+  height: auto;
+  top: 150px;
+}
+
+.wrap .content .video-wrap .video {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: 56.25%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+.wrap .content .video-wrap .video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .content .video-wrap .video .control {
+  width: 93px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.wrap .content .video-wrap .video .control i {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 26px;
+  color: #ebebeb;
+}
+
+.wrap .content .video-wrap .video__title {
+  position: relative;
+  width: 100%;
+  top: 134px;
+  z-index: 10;
+}
+
+.wrap .content .video-wrap .video__title .video__contents {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.wrap .content .video-wrap .video__title .video__contents .video__subject {
+  display: block;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #fff;
+}
+
+.wrap .content .video-wrap .video__title .video__contents .video__subtitle {
+  display: block;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -1.5px;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #fff;
+}
+
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+##Device = 데스크탑
+##Screen = 1281px 이상 해상도 데스크탑
+*/
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+##Device = 랩탑, 데스크탑
+##Screen = 1025px에서 1280px 사이
+*/
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(세로),
+##Screen = 768px에서 1024px 사이
+*/
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(가로)
+##Screen = 768px에서 1024px 사이
+*/
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+##Device = 저해상도 태블릿, 모바일(가로)
+##Screen = 481px에서 767px 사이
+*/
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+##Screen = 320px에서 479px 사이
+*/

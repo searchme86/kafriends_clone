@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+@import '../scss/base/font';
+@import '../scss/base/space';
+@import '../scss/base/shape';
+@import '../scss/base/border';
+@import '../scss/base/color';
+@import '../scss/mixin/item';
+@import '../scss/mixin/rem';
+
+html,
+body {
+  font-size: 15px;
+  font-family: NotoSans-Regular, AppleSDGothicNeo-Regular, '맑은 고딕',
+    Malgun Gothic, '돋움', dotum, sans-serif;
+}
+
+.mobile {
+  .content {
+    max-width: 100%;
+    margin: 0 auto;
+    &__inner {
+      padding: 10px 16px 0 16px;
+      padding: 2.666666666666667vw 4.266666666666667vw 0 4.266666666666667vw;
+      box-sizing: border-box;
+      .thumnail {
+        position: relative;
+        width: 57.06666666666666vw;
+        left: 50%;
+        margin-left: -28.000000000000004vw;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      strong {
+        display: block;
+        @include rem(18);
+        text-align: center;
+        padding-top: 5.333333333333334vw;
+      }
+      a {
+        display: block;
+        @include rem(18);
+        text-align: center;
+        font-weight: bold;
+        padding: 4.533333333333333vw 0 18.666666666666668vw 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1090px) {
+}
+
+@media screen and (max-width: 1066px) {
+}
+
+@media screen and (max-width: 1066px) {
+}
+
+@media screen and (max-width: 910px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+##Device = 데스크탑
+##Screen = 1281px 이상 해상도 데스크탑
+*/
+
+@media (min-width: 1281px) {
+  //CSS
+}
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+##Device = 랩탑, 데스크탑
+##Screen = 1025px에서 1280px 사이
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  //CSS
+}
+
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(세로),
+##Screen = 768px에서 1024px 사이
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  //CSS
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(가로)
+##Screen = 768px에서 1024px 사이
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  //CSS
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+##Device = 저해상도 태블릿, 모바일(가로)
+##Screen = 481px에서 767px 사이
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  //CSS
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+##Screen = 320px에서 479px 사이
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  //CSS
+}

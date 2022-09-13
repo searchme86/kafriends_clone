@@ -1,0 +1,10 @@
+@mixin clear {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+@mixin img {
+    width: 100%;
+    height: auto;
+}

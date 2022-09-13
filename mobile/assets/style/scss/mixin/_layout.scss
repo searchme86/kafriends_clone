@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+@import "../base/reset";
+@import "../base/border";
+@import "../base/color";
+@import "../base/font";
+@import "../base/shape";
+@import "../base/space";
+
+@mixin clear {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+@mixin img-size {
+    display: block;
+    width: 100%;
+    height: auto;
+}

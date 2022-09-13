@@ -1,0 +1,659 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+body {
+  font-family: NotoSans-Regular, AppleSDGothicNeo-Regular, "맑은 고딕", Malgun Gothic, "돋움", dotum, sans-serif;
+}
+
+.wrap .content {
+  position: relative;
+  top: 108px;
+}
+
+.wrap .content .gagao__wrap .gagao__contents {
+  width: 100%;
+  margin: 45px 0;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap {
+  max-width: 1173px;
+  padding: 44px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 100px auto 50px auto;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents {
+  width: 100%;
+  min-height: 566px;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .infoAdv {
+  float: left;
+  padding-right: 88px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 58px;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .infoAdv__title {
+  display: block;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .infoAdv__desc {
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: bold;
+  color: #7c7c84;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .infoAdv__banner {
+  width: 450px;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .infoAdv__banner img {
+  width: 100%;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .infoAdv:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form {
+  float: left;
+  width: 451px;
+  height: 547px;
+  padding: 48px 50px 78px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form__title {
+  font-size: 27px;
+  padding-bottom: 19px;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form__title a {
+  display: block;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form__title a .kakaoLogin {
+  width: 88px;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form__title a .kakaoLogin img {
+  width: 100%;
+  height: auto;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--email {
+  position: relative;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--email .input__email {
+  position: relative;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--email .input__email .label--email {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 47px;
+  font-size: 15px;
+  color: #ced9e8;
+  padding: 11px 0 15px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--email .input__email input[type="text"] {
+  width: 100%;
+  height: 47px;
+  font-size: 15px;
+  color: #252525;
+  letter-spacing: -0.3px;
+  border-width: 0 0 2px 0;
+  border-bottom: 2px solid #ebebeb;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--email .infoHelp__inputDel {
+  display: none;
+  position: absolute;
+  top: 11px;
+  right: 6px;
+  width: 20px;
+  height: 21px;
+  border: 0;
+  background: url("../../img/pages/login/btn_del.png") no-repeat;
+  cursor: pointer;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--email .infoHelp__infoBtn {
+  position: absolute;
+  top: 11px;
+  right: 6px;
+  width: 20px;
+  height: 21px;
+  border: 0;
+  background: url("../../img/pages/login/infoBtn.png") no-repeat;
+  cursor: pointer;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--email .infoHelp__infoTxt {
+  position: absolute;
+  top: 57px;
+  right: 0px;
+  z-index: 10;
+  width: 280px;
+  height: 76px;
+  background: #333333;
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 11px 12px 11px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--email .infoHelp__infoTxt--desc {
+  font-size: 11px;
+  color: #fff;
+  letter-spacing: -1px;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--email .infoHelp__infoTxt--find a {
+  position: relative;
+  top: 10px;
+  font-size: 11px;
+  color: #fbda17;
+  text-decoration: underline;
+  margin-top: 17px;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--email .infoHelp__infoTxt--visible {
+  display: none;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--email .infoHelp__infoTxt:after {
+  content: " ";
+  position: absolute;
+  width: 15px;
+  height: 7px;
+  top: -7px;
+  left: 260px;
+  background: url("../../img/pages/login/here.png") no-repeat;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--pwd {
+  position: relative;
+  margin-top: 20px;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--pwd .input__pwd {
+  position: relative;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--pwd .input__pwd .label--pwd {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 15px;
+  color: #ced9e8;
+  padding: 11px 0 15px 0;
+  cursor: pointer;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--pwd .input__pwd input {
+  width: 100%;
+  height: 47px;
+  font-size: 15px;
+  color: #252525;
+  letter-spacing: -0.3px;
+  border-width: 0 0 2px 0;
+  border-bottom: 2px solid #ebebeb;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--pwd .btn-pwd button {
+  display: none;
+  position: absolute;
+  top: 11px;
+  right: 6px;
+  width: 20px;
+  height: 21px;
+  border: 0;
+  background: url("../../img/pages/login/btn_del.png") no-repeat;
+  cursor: pointer;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--saved {
+  position: relative;
+  margin: 30px 0 40px 0;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--saved .keep-status {
+  position: relative;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--saved .keep-status input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 28px;
+  font-size: 13px;
+  font-weight: bold;
+  vertical-align: top;
+  background: url("../../img/pages/login/status_unchecked.png") no-repeat;
+  cursor: pointer;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--saved .keep-status input[type="checkbox"]:checked + label span {
+  background: url("../../img/pages/login/status_checked.png") no-repeat;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--saved .keep-status input[type="checkbox"]:checked + label
++ .inputArea__status--alert {
+  display: block;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--saved .keep-status .inputArea__status--alert {
+  display: none;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  z-index: 10;
+  width: 254px;
+  height: 52px;
+  padding: 11px 25px 0 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--saved .keep-status .inputArea__status--alert:after {
+  content: " ";
+  position: absolute;
+  width: 15px;
+  height: 7px;
+  top: -7px;
+  left: 63px;
+  background: url("../../img/pages/login/here.png") no-repeat;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--saved .keep-status .inputArea__status--alert .inputArea__status--desc {
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  word-break: keep-all;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .inputArea .inputArea__input--saved .keep-status .inputArea__status--alert .inputArea__status--find a {
+  position: relative;
+  top: 7px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fbda17;
+  text-decoration: underline;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .btnArea__email-btn {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .btnArea__email-btn .txt {
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .btnArea .email-btn--colored {
+  background: #ffe500;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .btnArea__liner {
+  position: relative;
+  display: block;
+  margin: 19px 0 18px 0;
+  text-align: center;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .btnArea__liner .txt {
+  font-size: 12px;
+  color: #c7c7c7;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .btnArea__liner:before {
+  position: absolute;
+  content: " ";
+  width: calc(50% - 20px);
+  height: 1px;
+  top: 11px;
+  left: 0;
+  background: #f0f0f0;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .btnArea__liner:after {
+  position: absolute;
+  content: " ";
+  width: calc(50% - 20px);
+  height: 1px;
+  top: 11px;
+  right: 0;
+  background: #f0f0f0;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .btnArea__qr-btn {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .btnArea__qr-btn .txt {
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .btnArea__qr-btn:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 16px;
+  left: 83px;
+  background: url("../../img/pages/login/btn_qr.png") no-repeat;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .btnArea .qr-btn--colored {
+  background: #f6f6f6;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .txtArea {
+  font-size: 11px;
+  color: #917c7a;
+  padding-top: 30px;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .txtArea__join {
+  float: left;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .txtArea__findInfo {
+  position: relative;
+  float: right;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .txtArea__findInfo a {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .txtArea__findInfo a:last-child {
+  margin-right: 0;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .txtArea__findInfo:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 14px;
+  top: 1px;
+  left: 65px;
+  background: #e5e5e5;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form .txtArea:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrap .content .gagao__wrap .gagao__footer {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .footer__wrap {
+  max-width: 1138px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-list {
+  position: relative;
+  margin: 25px 0 16px 0;
+  font-size: 0;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-list li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-list li:first-child {
+  padding-right: 20px;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-list li:last-child {
+  position: relative;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-list li:last-child:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  top: 4px;
+  right: 5px;
+  background: url("../../img/pages/login/footer_txt_up.png") no-repeat;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-list li a {
+  font-size: 11px;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-language ul {
+  display: none;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-language ul li {
+  height: 42px;
+  line-height: 42px;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-language ul li .language-selected {
+  display: block;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-language--up {
+  position: relative;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-language--up ul {
+  display: none;
+  position: absolute;
+  top: -130px;
+  right: 327px;
+  width: 90px;
+  height: 126px;
+  font-size: 11px;
+  border: 1px solid #eeeeee;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-language--highlighted {
+  background: #ffffff;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-language--highlighted .language-selected {
+  background: #eeeeee;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-copyright {
+  color: #7c88a9;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.wrap .content .gagao__wrap .gagao__footer .policy .policy-copyright--highlighted .company {
+  color: #7c7c7c;
+  font-weight: bold;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .infoAdv {
+    padding-right: 20px;
+  }
+  .wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .infoAdv__banner {
+    width: 430px;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .wrap .content .gagao__wrap .gagao__contents .login__wrap {
+    padding: 0;
+    margin-top: 0;
+  }
+  .wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents {
+    width: 100%;
+    min-height: 566px;
+  }
+  .wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .infoAdv {
+    display: none;
+  }
+  .wrap .content .gagao__wrap .gagao__contents .login__wrap .login__contents .form {
+    float: none;
+    margin: 0 auto;
+  }
+}

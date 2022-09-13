@@ -1,0 +1,366 @@
+@charset "utf-8";
+
+@import "../scss/base/reset";
+
+body {
+    font-family: "NotoSans Light", "Malgun Gothic", "맑은 고딕",
+        "Apple SD Gothic Neo", "돋움", dotum, sans-serif;
+}
+
+.wrap {
+    .footer {
+        &__upper {
+            width: 100%;
+            margin: 0 auto;
+            background: #3c404b;
+
+            .brand {
+                width: 963px;
+                margin: 0 auto;
+                height: 41px;
+                background: url("../../img/footer/footer_logo.png") top left
+                    20px #3c404b no-repeat;
+                padding: 15px 0 0 91px;
+
+                &__title {
+                    display: inline-block;
+                    font-size: 14px;
+                    color: #ffffff;
+                    margin-right: 47px;
+                }
+
+                &__link {
+                    display: inline-block;
+
+                    a {
+                        font-size: 14px;
+                        color: #ffffff;
+
+                        &:last-child {
+                            margin-left: 47px;
+                            position: relative;
+
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 2px;
+                                left: -27px;
+                                width: 2px;
+                                height: 14px;
+                                background: url("../../img/footer/link_bar.png")
+                                    no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__bottom {
+            width: 100%;
+            font-size: 15px;
+            color: #c1c1c1;
+            background: #2e2e2e;
+
+            .company {
+                width: 1033px;
+                margin: 0 auto;
+
+                &:after {
+                    content: " ";
+                    display: block;
+                    clear: both;
+                }
+
+                .policy {
+                    padding: 43px 0 35px 0;
+
+                    a {
+                        font-size: 16px;
+                        color: #c1c1c1;
+
+                        &:nth-child(2) {
+                            margin: 0 47px 0 47px;
+                        }
+                    }
+                }
+
+                .info {
+                    width: 330px;
+
+                    &__address {
+                        display: block;
+                        font-style: normal;
+                        font-size: 12px;
+                        color: rgba(255, 255, 255, 0.7);
+                        letter-spacing: -1px;
+                        word-wrap: noWrap;
+                        line-height: 1.5;
+                        font-weight: 545;
+
+                        a {
+                            font-size: 13px;
+                            color: #9bb7a9;
+                        }
+                    }
+                }
+
+                .contact {
+                    padding: 45px 0 47px 0;
+                    &__copyright {
+                        float: left;
+                        position: relative;
+                        top: 6px;
+                        font-size: 12px;
+                        color: rgba(255, 255, 255, 0.7);
+                        font-weight: bold;
+                    }
+
+                    &__familySite {
+                        position: relative;
+                        float: right;
+                        width: 128px;
+                        height: 40px;
+                        bottom: 13px;
+
+                        button {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            font-size: 11px;
+                            color: #9bb7a9;
+                            text-align: left;
+                            padding-left: 7px;
+                            border-radius: 5px;
+                            border: 0;
+                            cursor: pointer;
+                            background: transparent;
+
+                            &:before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: 0px;
+                                right: 18px;
+                                width: 39px;
+                                height: 38px;
+                                border-radius: 5px;
+                                background: url("../../img/footer/footer_btn.png")
+                                    no-repeat;
+                                background-size: 48px 40px;
+                            }
+                        }
+
+                        ul {
+                            display: none;
+                            position: absolute;
+                            width: 100%;
+                            left: 0;
+                            bottom: 100%;
+                            -webkit-transition: all 0.3s ease;
+                            -moz-transitio: all 0.3s ease;
+                            -o-transition: all 0.3s ease;
+                            -ms-transition: all 0.3s ease;
+                            transition: all 0.3s ease;
+
+                            li {
+                                position: relative;
+                                padding-top: 7px;
+
+                                &:before {
+                                    content: " ";
+                                    position: absolute;
+                                }
+
+                                &:last-child {
+                                    padding-bottom: 7px;
+                                }
+
+                                a {
+                                    font-size: 13px;
+                                    color: #9bb7a9;
+                                    padding-left: 5px;
+                                }
+
+                                .daum {
+                                    &:after {
+                                        content: " ";
+                                        display: block;
+                                        position: absolute;
+                                        width: 20px;
+                                        height: 20px;
+                                        top: 8px;
+                                        right: 18px;
+                                        border-radius: 5px;
+                                        background: url("../../img/footer/service_daum.png")
+                                            no-repeat;
+                                    }
+                                }
+
+                                .kasubway {
+                                    &:after {
+                                        content: " ";
+                                        display: block;
+                                        position: absolute;
+                                        width: 20px;
+                                        height: 20px;
+                                        top: 8px;
+                                        right: 18px;
+                                        border-radius: 5px;
+                                        background: url("../../img/footer/service_kasubway.png")
+                                            no-repeat;
+                                    }
+                                }
+
+                                .brunch {
+                                    &:after {
+                                        content: " ";
+                                        display: block;
+                                        position: absolute;
+                                        width: 20px;
+                                        height: 20px;
+                                        top: 8px;
+                                        right: 18px;
+                                        border-radius: 5px;
+                                        background: url("../../img/footer/service_brunch.png")
+                                            no-repeat;
+                                    }
+                                }
+
+                                .kamap {
+                                    &:after {
+                                        content: " ";
+                                        display: block;
+                                        position: absolute;
+                                        width: 20px;
+                                        height: 20px;
+                                        top: 8px;
+                                        right: 18px;
+                                        border-radius: 5px;
+                                        background: url("../../img/footer/service_kamap.png")
+                                            no-repeat;
+                                    }
+                                }
+
+                                .katalk {
+                                    &:after {
+                                        content: " ";
+                                        display: block;
+                                        position: absolute;
+                                        width: 20px;
+                                        height: 20px;
+                                        top: 8px;
+                                        right: 18px;
+                                        border-radius: 5px;
+                                        background: url("../../img/footer/service_katalk.png")
+                                            no-repeat;
+                                    }
+                                }
+
+                                .katalk {
+                                    &:after {
+                                        content: " ";
+                                        display: block;
+                                        position: absolute;
+                                        width: 20px;
+                                        height: 20px;
+                                        top: 8px;
+                                        right: 18px;
+                                        border-radius: 5px;
+                                        background: url("../../img/footer/service_katalk.png")
+                                            no-repeat;
+                                    }
+                                }
+
+                                .kakao {
+                                    &:after {
+                                        content: " ";
+                                        display: block;
+                                        position: absolute;
+                                        width: 20px;
+                                        height: 20px;
+                                        top: 8px;
+                                        right: 18px;
+                                        border-radius: 5px;
+                                        background: url("../../img/footer/service_kakao.png")
+                                            no-repeat;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        clear: both;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1281px) {
+    .wrap {
+        .footer {
+            &__upper {
+                .brand {
+                    width: 1109px;
+                }
+            }
+            &__bottom {
+                .company {
+                    width: 1151px;
+                    padding: 0 24px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1280px) {
+    .wrap {
+        .footer {
+            &__upper {
+                .brand {
+                    width: 1087px;
+                }
+            }
+            &__bottom {
+                .company {
+                    width: 1131px;
+                    padding: 0 24px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .footer {
+        &__bottom {
+            .company {
+                width: 1000px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .wrap {
+        .footer {
+            &__upper {
+                .brand {
+                    width: 626px;
+                    margin: auto 0 auto 20px;
+                }
+            }
+            &__bottom {
+                .company {
+                    width: 714px;
+                }
+            }
+        }
+    }
+}

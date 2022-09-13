@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+@import '../scss/base/font';
+@import '../scss/base/space';
+@import '../scss/base/shape';
+@import '../scss/base/border';
+@import '../scss/base/color';
+@import '../scss/mixin/item';
+@import '../scss/mixin/rem';
+
+html,
+body {
+  font-size: 15px;
+  font-family: NotoSans-Regular, AppleSDGothicNeo-Regular, '맑은 고딕',
+    Malgun Gothic, '돋움', dotum, sans-serif;
+}
+
+.mobile {
+  .content__title {
+    font-size: 22px;
+    padding: 19px 0px 4px 16px;
+  }
+  .content {
+    width: 100%;
+    &__inner {
+      position: relative;
+      padding: 2.666666666666667vw 4.266666666666667vw 0 4.266666666666667vw;
+      box-sizing: border-box;
+      .content__info {
+        .content__intro {
+          font-size: 15px;
+          line-height: 1.5;
+        }
+        .btn--submit {
+          display: block;
+          width: 100%;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+          background: #3c404b;
+          font-size: 16px;
+          color: #fff;
+          border-radius: 5px;
+          margin-top: 24px;
+          font-weight: bold;
+        }
+      }
+      .gift {
+        padding-bottom: 80px;
+        .gift__title {
+          display: block;
+          padding: 60px 0 16px 0;
+          font-size: 19px;
+        }
+        .content__message {
+          background: #f7f7f7;
+          padding: 26px 20px 61px 20px;
+          ul {
+            li {
+              padding-top: 39px;
+              .text-group {
+                .text-title {
+                  display: block;
+                  font-size: 16px;
+                  font-weight: bold;
+                }
+                .text-info {
+                  font-size: 14px;
+                  padding-top: 10px;
+                }
+                .text-list {
+                  ul {
+                    li {
+                      font-size: 15px;
+                      padding-left: 11px;
+                      padding-top: 7px;
+                      line-height: 1.5;
+                      .arrow {
+                        position: relative;
+                        display: inline-block;
+                        width: 14px;
+                        height: 5px;
+                        top: -3px;
+                        background: url('../../img/pages/product/arrow.png')
+                          no-repeat;
+                      }
+                    }
+                    .dot {
+                      position: relative;
+                      &:before {
+                        content: ' ';
+                        display: block;
+                        width: 3px;
+                        height: 3px;
+                        position: absolute;
+                        top: 18px;
+                        left: 0;
+                        background: url('../../img/pages/product/dot.png')
+                          no-repeat;
+                      }
+                    }
+                  }
+                }
+                .bundle {
+                  .dot + li {
+                    padding-top: 0;
+                  }
+                  .pt-0 {
+                    padding-top: 0;
+                  }
+                }
+              }
+              &:first-child {
+                padding-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+}
+
+@media screen and (min-width: 667px) {
+}
+
+@media screen and (min-width: 736px) {
+}

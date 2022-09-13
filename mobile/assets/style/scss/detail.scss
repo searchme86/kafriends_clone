@@ -1,0 +1,963 @@
+@charset "utf-8";
+
+@import '../scss/base/font';
+@import '../scss/base/space';
+@import '../scss/base/shape';
+@import '../scss/base/border';
+@import '../scss/base/color';
+@import '../scss/mixin/item';
+@import '../scss/mixin/rem';
+
+html,
+body {
+  font-size: 15px;
+  font-family: NotoSans-Regular, AppleSDGothicNeo-Regular, '맑은 고딕',
+    Malgun Gothic, '돋움', dotum, sans-serif;
+}
+
+.mobile {
+  .content {
+    max-width: 100%;
+    margin: 0 auto;
+    &__inner {
+      position: relative;
+      @include content__inner;
+      .item__detail {
+        position: relative;
+        .item__overview {
+          .item__title {
+            @include item__title;
+          }
+          .item__price {
+            display: block;
+            font-size: 4.533vw;
+            .price-unit {
+              font-size: 4.8vw;
+            }
+          }
+          .item__thumnail {
+            width: auto;
+            @include mt(15px);
+            border-radius: 10px;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+        .item__function {
+          .item__share {
+            button {
+              display: block;
+              position: absolute;
+              width: 46px;
+              height: 46px;
+              top: 40px;
+              right: 20px;
+              border: 1px solid #f1f1f1;
+              border-radius: 100%;
+              background: url('../../img/pages/detail/share.png') #fff7f7 center
+                center no-repeat;
+            }
+
+            .item__social {
+              display: none;
+              position: absolute;
+              width: 46px;
+              top: -184px;
+              right: 20px;
+              z-index: 1;
+              overflow: hidden;
+              ul {
+                li {
+                  width: 44px;
+                  height: 46px;
+                  margin-bottom: 8px;
+                  border: 1px solid #f1f1f1;
+                  border-radius: 100%;
+                  background: #fff7f7;
+                }
+                .share-btn__twitter {
+                  background: url('../../img/pages/detail/share__twitter.png')
+                    #fff7f7 center center no-repeat;
+                }
+                .share-btn__facebook {
+                  background: url('../../img/pages/detail/share__facebook.png')
+                    #fff7f7 center center no-repeat;
+                }
+                .share-btn__kakaoStory {
+                  background: url('../../img/pages/detail/share__kakaoStory.png')
+                    #fff7f7 center center no-repeat;
+                }
+                .share-btn__kakao {
+                  background: url('../../img/pages/detail/share__kakao.png')
+                    #fff7f7 center center no-repeat;
+                }
+                .share-btn {
+                  background: url('../../img/pages/detail/share.png') #fff7f7
+                    center center no-repeat;
+                }
+              }
+            }
+          }
+
+          .item__review {
+            @include padding_item__sub-title;
+            .item__sub-title {
+              display: block;
+              float: left;
+              @include item__sub-title;
+            }
+            .item__evaluation {
+              float: right;
+              padding-top: 7px;
+              .item__star {
+                display: inline-block;
+                li {
+                  display: inline-block;
+                  width: 17px;
+                  height: 15px;
+                }
+                .full {
+                  background: url('../../img/pages/detail/star__full.png')
+                    no-repeat;
+                }
+                .custom {
+                  background: url('../../img/pages/detail/star__custom__탁상시계_고속무선충전_라이언.png')
+                    no-repeat;
+                }
+              }
+              .review-score {
+                display: inline-block;
+                font-size: 3.73333vw;
+                .total {
+                  color: #9a9a9e;
+                  &:before {
+                    content: ' ';
+                    display: inline-block;
+                    position: relative;
+                    width: 1px;
+                    height: 10px;
+                    top: 0;
+                    left: -2px;
+                    background: #e9e9e9;
+                  }
+                }
+              }
+            }
+            &:after {
+              content: ' ';
+              display: block;
+              clear: both;
+            }
+          }
+          .item__charts {
+            .item__bottom-title {
+              @include item__bottom-title;
+            }
+            .chart {
+              position: relative;
+              margin: 20px;
+              width: 240px;
+              height: 240px;
+              margin: 10px auto 10px auto;
+              z-index: 2;
+              .circle-mask-outer,
+              .circle-mask-inner {
+                position: absolute;
+                overflow: hidden;
+                width: 120px;
+                height: 240px;
+                z-index: 3;
+              }
+              .circle-mask-outer.left {
+                left: 0;
+              }
+              .circle-mask-outer.right {
+                right: 0;
+              }
+              .circle-mask-inner {
+                -webkit-transform: rotate(0);
+                -ms-transform: rotate(0);
+                transform: rotate(0);
+              }
+              .circle-mask-outer.left {
+                .circle-mask-inner {
+                  left: 100%;
+                  -webkit-transform-origin: 0 50%;
+                  -ms-transform-origin: 0 50%;
+                  transform-origin: 0 50%;
+                }
+              }
+              .circle-mask-outer.right {
+                .circle-mask-inner {
+                  right: 100%;
+                  -webkit-transform-origin: 100% 50%;
+                  -ms-transform-origitn: 100% 50%;
+                  transform-origin: 100% 50%;
+                }
+              }
+              .circle-body {
+                position: absolute;
+                width: 240px;
+                height: 240px;
+                border-radius: 50%;
+                background: #fed400;
+                z-index: 3;
+              }
+              .chart-content {
+                position: absolute;
+                top: 30px;
+                right: 50px;
+                z-index: 4;
+                .text {
+                  font-size: 20px;
+                }
+              }
+
+              .circle-mask-outer.left .circle-body {
+                right: 0;
+              }
+              .circle-mask-outer.right .circle-body {
+                left: 0;
+              }
+              &:after {
+                content: ' ';
+                position: absolute;
+                width: 240px;
+                height: 240px;
+                top: 0;
+                right: 0;
+                border-radius: 50%;
+                background: #f7f7f7;
+                z-index: 1;
+              }
+            }
+          }
+          .item__hash {
+            @include padding_item__sub-title;
+            .item__sub-title {
+              @include item__sub-title;
+            }
+            ul {
+              li {
+                display: inline-block;
+                line-height: 9.067vw;
+                border: 1px solid #dddddd;
+                border-radius: 10px;
+                padding: 0 4.2vw;
+                font-size: 3.467vw;
+                letter-spacing: -1px;
+                margin-top: 5px;
+              }
+            }
+          }
+        }
+        .item__check {
+          .item__warning {
+            .item__sub-title {
+              @include item__sub-title;
+            }
+            .item__guide {
+              .item__layout {
+                .item__layout-thumnail {
+                  width: auto;
+                  @include mt(20px);
+                  border-radius: 10px;
+                  overflow: hidden;
+                  img {
+                    width: 100%;
+                    height: auto;
+                  }
+                }
+                .item__layout-content {
+                  font-size: 4.533333333333333vw;
+                  line-height: 1.56;
+                  @include pt(20px);
+                }
+              }
+            }
+
+            .warning-thumnail {
+              width: auto;
+              @include mt(20px);
+              img {
+                @include img;
+              }
+            }
+            .warning-contents {
+              @include pb(10px);
+              .item__sub-title {
+                @include item__sub-title;
+              }
+              .item__sub-content {
+                .item__sub-list {
+                  position: relative;
+                  @include pl(10px);
+                  li {
+                    @include pl(10px);
+                  }
+                  .dash {
+                    @include pb(10px);
+                    &:before {
+                      content: ' - ';
+                      position: absolute;
+                      left: 0;
+                    }
+                    ul {
+                      li {
+                        @include pt(5px);
+                        &:first-child {
+                          @include pt(5px);
+                        }
+                      }
+                    }
+                  }
+                  .reference {
+                    @include pb(10px);
+                    &:before {
+                      content: '※';
+                      position: absolute;
+                      left: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .item__specification {
+            button {
+              width: 100%;
+              text-align: left;
+              height: 84px;
+              line-height: 84px;
+              background: url('../../img/pages/detail/button__down.png') center
+                right 24px no-repeat;
+              .item__sub-title {
+                display: block;
+                font-size: 6.4vw;
+                border-top: 1px solid #f3f3f5;
+                border-bottom: 1px solid #f3f3f5;
+              }
+            }
+            .item__spec-content {
+              display: none;
+              .item__spec-list {
+                @include pt(5px);
+                > li {
+                  position: relative;
+                  @include fs(4.266666666666667vw);
+                  @include p4(0, 0, 10px, 10px);
+                  &:before {
+                    content: ' ';
+                    display: block;
+                    width: 4px;
+                    height: 3px;
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+                    background: #333333;
+                  }
+                  .main-spec {
+                    @include p4(5px, 0, 0, 10px);
+                    li {
+                      position: relative;
+                      @include p4(0, 0, 5px, 10px);
+                      &:before {
+                        content: '-';
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                      }
+                    }
+                  }
+                  .bold {
+                    @include this_important;
+                  }
+                  .item-refund {
+                    @include pt(5px);
+                    @include fs(4vw);
+                    > li {
+                      position: relative;
+                      @include p4(0px, 0px, 5px, 10px);
+                      &:before {
+                        content: '*';
+                        position: absolute;
+                        left: 0;
+                      }
+                      .item-discard {
+                        position: relative;
+                        @include p4(5px, 0px, 0px, 10px);
+                        li {
+                          @include fs(4vw);
+                          &:before {
+                            content: '-';
+                            position: absolute;
+                            left: 0;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .item__delivery {
+            button {
+              position: relative;
+              width: 100%;
+              text-align: left;
+              height: 91px;
+              line-height: 88px;
+              background: url('../../img/pages/detail/button__down.png') center
+                right 24px no-repeat;
+              border-top: 1px solid #f3f3f5;
+              border-bottom: 1px solid #f3f3f5;
+              .item__sub-title {
+                display: inline-block;
+                font-size: 6.4vw;
+              }
+              .item__delivery-ban {
+                display: inline-block;
+                position: absolute;
+                right: 46px;
+                color: #9a9a9e;
+                letter-spacing: -1px;
+              }
+            }
+
+            .item__delivery-content {
+              display: none;
+              .item__delivery-tab {
+                position: relative;
+                top: 5px;
+                @include fs(0px);
+                .tab {
+                  display: inline-block;
+                  width: 50%;
+                  height: 27px;
+                  line-height: 27px;
+                  @include fs(4.266666666666667vw);
+                  @include pb(7px);
+                  text-align: center;
+                  @include b1bottom(#e3e5e8);
+                  &.on {
+                    border-bottom: 1px solid #3c404b;
+                  }
+                }
+              }
+              .item__delivery-tabCont {
+                display: none;
+                @include mt(25px);
+                .item__delivery-tablist {
+                  li {
+                    position: relative;
+                    @include fs(4.266666666666667vw);
+                    @include p4(0, 0, 5px, 10px);
+                    strong {
+                      display: block;
+                      @include pb(9px);
+                    }
+                    p {
+                      &:before {
+                        content: ' ';
+                        display: block;
+                        width: 4px;
+                        height: 3px;
+                        position: absolute;
+                        top: 10px;
+                        left: 0;
+                        background: #333333;
+                      }
+                    }
+                    ul {
+                      li {
+                        position: relative;
+                        &:before {
+                          content: ' ';
+                          display: block;
+                          width: 4px;
+                          height: 3px;
+                          position: absolute;
+                          top: 10px;
+                          left: 0;
+                          background: #333333;
+                        }
+                      }
+                    }
+                  }
+                }
+                &.on {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+        .item__introduction {
+          border-top: 10px solid #f7f7f7;
+          .item__layout {
+            @include pb(20px);
+            .item__layout-title {
+              display: block;
+              font-size: 6.4vw;
+              letter-spacing: -0.0533333vw;
+              @include mt(12px);
+              line-height: 7.46667vw;
+            }
+            .item__layout-content {
+              font-size: 4.533333333333333vw;
+              line-height: 1.56;
+              @include p2(20px, 0);
+            }
+            .item__layout-thumnail {
+              width: auto;
+              @include mt(20px);
+              border-radius: 10px;
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+        .item__opinion {
+          .btn__write-review {
+            width: 100%;
+            height: 52px;
+            color: #fff;
+            @include fs(3.733333333333334vw);
+            @include mb(40px);
+            line-height: 52px;
+            border-radius: 5px;
+            background: url('../../img/pages/detail/items/digital__clock/button__review.png')
+              #3c404b center left 24.266666666666666vw no-repeat;
+          }
+          .opinion {
+            .opinion-tab {
+              @include mb(15px);
+              .opinion-tablist {
+                @include fs(0px);
+                li {
+                  display: inline-block;
+                  button {
+                    display: inline-block;
+                    @include fs(3.2vw);
+                    height: 30px;
+                    line-height: 30px;
+                    border: 1px solid #e4e4e4;
+                    border-radius: 10px;
+                    @include p2(0px, 5px);
+                    background: #fff;
+                    color: #808080;
+                  }
+                  &:first-child {
+                    @include mr(6px);
+                  }
+                  &.on {
+                    button {
+                      background: #8d92a1;
+                      color: #fff;
+                    }
+                  }
+                }
+              }
+            }
+            .item__opinion-content {
+              display: none;
+
+              @include mb(35px);
+              .item__opinion-list {
+                > li {
+                  @include p4(24px, 0px, 31px, 0px);
+                  border-top: 1px solid #e9e9e9;
+                  .user-name {
+                    @include fs(4.8vw);
+                    font-weight: bold;
+                  }
+                  .user-rate {
+                    ul {
+                      display: inline-block;
+                      li {
+                        float: left;
+                        @include mr(5px);
+                        &:last-child {
+                          @include mr(0px);
+                        }
+                      }
+                      .star,
+                      .star-blank {
+                        width: 14px;
+                        height: 13px;
+                      }
+                      .star {
+                        background: url('../../img/pages/detail/items/digital__clock/item__star.png')
+                          no-repeat;
+                      }
+                      .star-blank {
+                        background: url('../../img/pages/detail/items/digital__clock/item__star-blank.png')
+                          no-repeat;
+                      }
+
+                      &:after {
+                        content: ' ';
+                        display: block;
+                        clear: both;
+                      }
+                    }
+                    .opinion-date {
+                      @include fs(3.666666666666667vw);
+                      color: #9a9a9e;
+                    }
+                  }
+                  .opinion-content {
+                    @include p2(20px, 0px);
+                    .opinion {
+                      line-height: 1.5;
+                    }
+                    .btn__show-more {
+                      display: block;
+                      width: 60px;
+                      height: 30px;
+                      line-height: 30px;
+                      text-align: left;
+                      @include m4(7px, 0, 22px, 0);
+                      background: url('../../img/pages/detail/items/digital__clock/btn_opinion_full.png')
+                        center right 3px no-repeat;
+                    }
+                  }
+                  .like-bg {
+                    width: 100%;
+                    height: 25px;
+                    background: url('../../img/pages/detail/items/digital__clock/bg_like.png')
+                      center left no-repeat;
+                    .btn-like {
+                      display: block;
+                      @include p4(5px, 0px, 0px, 30px);
+                      span {
+                        @include fs(13px);
+                        color: #9a9a9e;
+                      }
+                      .like-count {
+                        @include ml(6px);
+                        font-weight: bold;
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.on {
+                display: block;
+              }
+            }
+            .btn-review-more {
+              width: 100%;
+              border: 1px solid #e3e5e8;
+              height: 48px;
+              line-height: 48px;
+              border-radius: 5px;
+            }
+            .review-more {
+              display: none;
+              > li {
+                @include p4(24px, 0px, 31px, 0px);
+                border-top: 1px solid #e9e9e9;
+                .user-name {
+                  @include fs(4.8vw);
+                  font-weight: bold;
+                }
+                .user-rate {
+                  ul {
+                    display: inline-block;
+                    li {
+                      float: left;
+                      @include mr(5px);
+                      &:last-child {
+                        @include mr(0px);
+                      }
+                    }
+                    .star,
+                    .star-blank {
+                      width: 14px;
+                      height: 13px;
+                    }
+                    .star {
+                      background: url('../../img/pages/detail/items/digital__clock/item__star.png')
+                        no-repeat;
+                    }
+                    .star-blank {
+                      background: url('../../img/pages/detail/items/digital__clock/item__star-blank.png')
+                        no-repeat;
+                    }
+
+                    &:after {
+                      content: ' ';
+                      display: block;
+                      clear: both;
+                    }
+                  }
+                  .opinion-date {
+                    @include fs(3.666666666666667vw);
+                    color: #9a9a9e;
+                  }
+                }
+                .opinion-content {
+                  @include p2(20px, 0px);
+                  .opinion {
+                    line-height: 1.5;
+                  }
+                  .btn__show-more {
+                    display: block;
+                    width: 60px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: left;
+                    @include m4(7px, 0, 22px, 0);
+                    background: url('../../img/pages/detail/items/digital__clock/btn_opinion_full.png')
+                      center right 3px no-repeat;
+                  }
+                }
+                .like-bg {
+                  width: 100%;
+                  height: 25px;
+                  background: url('../../img/pages/detail/items/digital__clock/bg_like.png')
+                    center left no-repeat;
+                  .btn-like {
+                    display: block;
+                    @include p4(5px, 0px, 0px, 30px);
+                    span {
+                      @include fs(13px);
+                      color: #9a9a9e;
+                    }
+                    .like-count {
+                      @include ml(6px);
+                      font-weight: bold;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .item__choose {
+          .item__recommend {
+            border-top: 10px solid #f7f7f7;
+            .item__title {
+              display: block;
+              @include item__title;
+            }
+            .item__recommend-content {
+              .item__recommend-list {
+                li {
+                  float: left;
+                  width: 50%;
+                  height: auto;
+                  // height:auto가 핵심!!!;
+                  @include p4(6px, 6px, 6px, 6px);
+                  @include mb(20px);
+                  box-sizing: border-box;
+                  position: relative;
+                  a {
+                    display: block;
+                    width: auto;
+                    .item__recommend-thumnail {
+                      position: relative;
+                      width: 100%;
+                      height: auto;
+                      img {
+                        width: 100%;
+                        height: auto;
+                      }
+                      &:after {
+                        content: ' ';
+                        width: 100%;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        position: absolute;
+                        border-radius: 10px;
+                        z-index: 1;
+                        background: rgba(0, 0, 0, 0.02);
+                      }
+                    }
+                    .item__recommend-info {
+                      @include fs(4.26667vw);
+                      letter-spacing: -0.0613333vw;
+                      p {
+                        display: -webkit-box;
+                        width: 33.0667vw;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        word-wrap: break-word;
+                        color: #767676;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        line-height: 1.2em;
+                        height: 3.6em;
+                      }
+                      @include mt(13px);
+                      span {
+                        display: block;
+                        @include pt(5px);
+                        @include fs(4.26667vw);
+                        font-size: 16px;
+                        font-weight: bold;
+                        letter-spacing: -0.0666667vw;
+                        line-height: 5.33333vw;
+                        color: #000000;
+                      }
+                    }
+                  }
+                  button {
+                    display: block;
+                    width: 15px;
+                    height: 20px;
+                    position: absolute;
+                    top: 48vw;
+                    right: 3.4666666666666663vw;
+                    background: url('../../img/pages/detail/items/digital__clock/item__pick.png')
+                      no-repeat;
+                  }
+                }
+                &:after {
+                  content: ' ';
+                  display: block;
+                  clear: both;
+                }
+              }
+            }
+          }
+          .item__seen {
+            border-top: 10px solid #f7f7f7;
+            .item__title {
+              display: block;
+              @include item__title;
+            }
+            .item__seen-content {
+              .item__seen-list {
+                li {
+                  float: left;
+                  width: 50%;
+                  height: auto;
+                  // height:auto가 핵심!!!;
+                  @include p4(6px, 6px, 6px, 6px);
+                  @include mb(20px);
+                  box-sizing: border-box;
+                  position: relative;
+                  a {
+                    display: block;
+                    width: auto;
+                    .item__seen-thumnail {
+                      position: relative;
+                      width: 100%;
+                      height: auto;
+                      img {
+                        width: 100%;
+                        height: auto;
+                      }
+                      &:after {
+                        content: ' ';
+                        width: 100%;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        position: absolute;
+                        border-radius: 10px;
+                        z-index: 1;
+                        background: rgba(0, 0, 0, 0.02);
+                      }
+                    }
+                    .item__seen-info {
+                      @include fs(4.26667vw);
+                      letter-spacing: -0.0613333vw;
+                      p {
+                        display: -webkit-box;
+                        width: 33.0667vw;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        word-wrap: break-word;
+                        color: #767676;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        line-height: 1.2em;
+                        height: 3.6em;
+                      }
+                      @include mt(13px);
+                      span {
+                        display: block;
+                        @include pt(5px);
+                        @include fs(4.26667vw);
+                        font-size: 16px;
+                        font-weight: bold;
+                        letter-spacing: -0.0666667vw;
+                        line-height: 5.33333vw;
+                        color: #000000;
+                      }
+                    }
+                  }
+                  button {
+                    display: block;
+                    width: 15px;
+                    height: 20px;
+                    position: absolute;
+                    top: 48vw;
+                    right: 3.4666666666666663vw;
+                    background: url('../../img/pages/detail/items/digital__clock/item__pick.png')
+                      no-repeat;
+                  }
+                }
+                &:after {
+                  content: ' ';
+                  display: block;
+                  clear: both;
+                }
+              }
+            }
+          }
+        }
+        .buy {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          display: block;
+          width: 100%;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+          color: #fff;
+          font-weight: bold;
+          font-size: 17px;
+          background: url('../../img/pages/total/item__pick.png') #3c404b center
+            right 10px no-repeat;
+          z-index: 7;
+        }
+        .click-to-top {
+          .btn-top {
+            display: none;
+            position: fixed;
+            width: 12.8vw;
+            height: 12.533333333333333vw;
+            right: 3.733333333333334vw;
+            bottom: 20.266666666666666vw;
+            z-index: 11;
+            background: url('../../img/pages/store/btn_to_top.png') center
+              center no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+}
+
+@media screen and (min-width: 667px) {
+}
+
+@media screen and (min-width: 736px) {
+}

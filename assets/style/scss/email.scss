@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+@import "../scss/base/reset";
+
+body {
+    font-family: NotoSans-Regular, AppleSDGothicNeo-Regular, "맑은 고딕",
+        Malgun Gothic, "돋움", dotum, sans-serif;
+}
+
+.wrap {
+    position: relative;
+    .content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 520px;
+        margin-left: -260px;
+
+        .email {
+            .email__title {
+                padding: 67px 0 40px 0;
+                a {
+                    display: block;
+                    .kakaoLogin {
+                        width: 88px;
+                        margin: 0 auto;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            .email__content {
+                border: 1px solid #e5e5e5;
+                .inner-container {
+                    width: 379px;
+                    margin: 58px 69px 49px 69px;
+                    .inner-txt {
+                        .inner-title {
+                            font-size: 26px;
+                            line-height: 1.6;
+                            padding-bottom: 18px;
+                            text-align: center;
+                        }
+                        .inner-subtitle {
+                            width: 100%;
+                            padding-bottom: 84px;
+                            font-size: 15px;
+                            color: #807c7c;
+                            text-align: center;
+                            font-weight: bold;
+                        }
+                    }
+                    .button-area {
+                        p {
+                            font-size: 14px;
+                            color: #807c7c;
+                            text-align: center;
+                            font-weight: bold;
+                            letter-spacing: -1px;
+                        }
+                        .link-button {
+                            padding-top: 17px;
+                            padding-bottom: 19px;
+                            .btn__link {
+                                width: 100%;
+                                height: 50px;
+                                line-height: 50px;
+                                border-radius: 5px;
+                                font-size: 14px;
+                                font-weight: 540;
+                            }
+                            .btn__hasEmail {
+                                background: #ffe500;
+                            }
+                            .btn__willEmail {
+                                margin-top: 10px;
+                                background: #f6f6f6;
+                            }
+                        }
+                    }
+                    .link {
+                        padding-top: 45px;
+                        p {
+                            line-height: 1.5;
+                            font-size: 13px;
+                            color: #7c7c7c;
+                            text-align: center;
+                        }
+                        a {
+                            display: block;
+                            font-size: 13px;
+                            color: #4c4c4c;
+                            text-align: center;
+                            padding-top: 15px;
+                            font-weight: bold;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .gagao__footer {
+            .footer__wrap {
+                text-align: center;
+                .policy {
+                    .policy-list {
+                        position: relative;
+                        margin: 43px 0 16px 0;
+                        font-size: 0;
+                        li {
+                            display: inline-block;
+                            padding-right: 20px;
+
+                            &:first-child {
+                                padding-right: 20px;
+                            }
+                            &:nth-child(2) {
+                                font-weight: bold;
+                                color: #4c4c4c;
+                                font-family: NotoSans-Bold, sans-serif;
+                            }
+                            &:last-child {
+                                position: relative;
+                                &:after {
+                                    content: " ";
+                                    display: block;
+                                    position: absolute;
+                                    width: 9px;
+                                    height: 5px;
+                                    top: 4px;
+                                    right: 5px;
+                                    background: url("../../img/pages/login/footer_txt_up.png")
+                                        no-repeat;
+                                }
+                            }
+
+                            a {
+                                font-size: 11px;
+                            }
+                        }
+                    }
+
+                    .policy-language {
+                        ul {
+                            display: none;
+                            li {
+                                height: 42px;
+                                line-height: 42px;
+                                .language-selected {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+
+                    .policy-language--up {
+                        position: relative;
+                        ul {
+                            display: none;
+                            position: absolute;
+                            top: -130px;
+                            right: 23px;
+                            width: 90px;
+                            height: 126px;
+                            font-size: 11px;
+                            border: 1px solid #eeeeee;
+                            box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
+                        }
+                    }
+
+                    .policy-language--highlighted {
+                        background: #ffffff;
+
+                        .language-selected {
+                            background: #eeeeee;
+                        }
+                    }
+
+                    .policy-copyright {
+                        color: #7c88a9;
+                        font-size: 12px;
+                        line-height: 1.5;
+                    }
+
+                    .policy-copyright--highlighted {
+                        .company {
+                            color: #7c7c7c;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1090px) {
+}
+
+@media screen and (max-width: 1066px) {
+}
+
+@media screen and (max-width: 1066px) {
+}
+
+@media screen and (max-width: 910px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+##Device = 데스크탑
+##Screen = 1281px 이상 해상도 데스크탑
+*/
+
+@media (min-width: 1281px) {
+    //CSS
+}
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+##Device = 랩탑, 데스크탑
+##Screen = 1025px에서 1280px 사이
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    //CSS
+}
+
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(세로),
+##Screen = 768px에서 1024px 사이
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    //CSS
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(가로)
+##Screen = 768px에서 1024px 사이
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    //CSS
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+##Device = 저해상도 태블릿, 모바일(가로)
+##Screen = 481px에서 767px 사이
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    //CSS
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+##Screen = 320px에서 479px 사이
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    //CSS
+}

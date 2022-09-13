@@ -1,0 +1,345 @@
+@charset "utf-8";
+
+@import '../scss/base/font';
+@import '../scss/base/space';
+@import '../scss/base/shape';
+@import '../scss/base/border';
+@import '../scss/base/color';
+@import '../scss/mixin/item';
+@import '../scss/mixin/rem';
+
+html,
+body {
+  font-size: 15px;
+  font-family: NotoSans-Regular, AppleSDGothicNeo-Regular, '맑은 고딕',
+    Malgun Gothic, '돋움', dotum, sans-serif;
+}
+
+.mobile {
+  width: 100%;
+  .search {
+    width: 100%;
+    margin: 0 auto;
+    .search__box {
+      padding-top: 20px;
+      form {
+        padding-left: 23px;
+        font-size: 0;
+        input {
+          display: inline-block;
+          width: 249px;
+          height: 44px;
+          background: url('../../img/pages/search/finder.png') #eff0f4 center
+            left 13px no-repeat;
+          border-radius: 5px;
+          border: 0;
+          padding-left: 45px;
+          font-size: 14px;
+          color: #1e1e1e;
+        }
+        .btn__cancel {
+          display: inline-block;
+          width: 57px;
+          height: 46px;
+          line-height: 46px;
+          text-align: center;
+          background: #fff;
+          font-size: 16px;
+          color: #1e1e1e;
+          vertical-align: top;
+        }
+      }
+    }
+    .search__category {
+      ul {
+        overflow: auto hidden;
+        white-space: nowrap;
+        padding: 13px 22px;
+        font-size: 0;
+        border-bottom: 1px solid #dcdcdc;
+        li {
+          display: inline-block;
+          font-size: 14px;
+          padding: 8px 20px;
+          border: 1px solid #e4e4e4;
+          border-radius: 50px;
+          margin-right: 7px;
+        }
+      }
+    }
+    .search__contents {
+      width: 100%;
+      height: 533px;
+      background: #f9f9f9;
+      .search__inner {
+        padding: 17px 16px;
+        ul {
+          li {
+            float: left;
+            border-radius: 5px;
+            padding: 6px;
+            box-sizing: border-box;
+            a {
+              display: block;
+              width: 102px;
+              height: 101px;
+              border-radius: 5px;
+            }
+            .ryan {
+              background: url('../../img/pages/search/ryan.png') no-repeat;
+            }
+            .appeach {
+              background: url('../../img/pages/search/appeach.png') no-repeat;
+            }
+            .muzi {
+              background: url('../../img/pages/search/muzi.png') no-repeat;
+            }
+            .frodo {
+              background: url('../../img/pages/search/frodo.png') no-repeat;
+            }
+            .neo {
+              background: url('../../img/pages/search/neo.png') no-repeat;
+            }
+            .tube {
+              background: url('../../img/pages/search/tube.png') no-repeat;
+            }
+            .jayG {
+              background: url('../../img/pages/search/jayG.png') no-repeat;
+            }
+            .con {
+              background: url('../../img/pages/search/conn.png') no-repeat;
+            }
+          }
+          &:after {
+            content: ' ';
+            display: block;
+            clear: both;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .mobile {
+    .search {
+      .search__box {
+        form {
+          padding-left: 23px;
+          input {
+            width: 317px;
+            height: 44px;
+            box-sizing: border-box;
+            background-size: 20px 20px;
+            font-size: 20px;
+          }
+          .btn__cancel {
+            width: 68px;
+            height: 44px;
+            font-size: 16px;
+          }
+        }
+      }
+      .search__category {
+        ul {
+          padding: 13px 25px;
+          li {
+            font-size: 14px;
+            margin-right: 7px;
+          }
+        }
+      }
+
+      .search__contents {
+        height: 666px;
+        .search__inner {
+          ul {
+            li {
+              padding: 6px;
+              a {
+                width: 114px;
+                height: 114px;
+                padding: 6;
+              }
+              .ryan {
+                background-size: contain;
+              }
+              .appeach {
+                background-size: contain;
+              }
+              .muzi {
+                background-size: contain;
+              }
+              .frodo {
+                background-size: contain;
+              }
+              .neo {
+                background-size: contain;
+              }
+              .tube {
+                background-size: contain;
+              }
+              .jayG {
+                background-size: contain;
+              }
+              .con {
+                background-size: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 667px) {
+  .mobile {
+    .search {
+      .search__box {
+        form {
+          padding-left: 29px;
+          input {
+            width: 535px;
+            height: 70px;
+            padding: 17px 62px 17px 71px;
+            box-sizing: border-box;
+            background-size: 32px 32px;
+            font-size: 32px;
+          }
+          .btn__cancel {
+            width: 103px;
+            height: 70px;
+            font-size: 26px;
+          }
+        }
+      }
+      .search__category {
+        ul {
+          padding: 13px 30px;
+          li {
+            font-size: 23px;
+            padding: 16px 31px;
+            margin-right: 7px;
+          }
+        }
+      }
+
+      .search__contents {
+        height: 666px;
+        .search__inner {
+          ul {
+            li {
+              padding: 10px;
+              a {
+                width: 185px;
+                height: 185px;
+              }
+              .ryan {
+                background-size: contain;
+              }
+              .appeach {
+                background-size: contain;
+              }
+              .muzi {
+                background-size: contain;
+              }
+              .frodo {
+                background-size: contain;
+              }
+              .neo {
+                background-size: contain;
+              }
+              .tube {
+                background-size: contain;
+              }
+              .jayG {
+                background-size: contain;
+              }
+              .con {
+                background-size: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .mobile {
+    .search {
+      .search__box {
+        form {
+          padding-left: 28px;
+          input {
+            width: 591px;
+            height: 79px;
+            padding: 22px 24px 22px 66px;
+            box-sizing: border-box;
+            font-size: 35px;
+            background: url('../../img/pages/search/finder.png') #eff0f4 center
+              left 24px no-repeat;
+            background-size: 35px 35px;
+          }
+          .btn__cancel {
+            width: 103px;
+            height: 79px;
+            font-size: 28px;
+          }
+        }
+      }
+      .search__category {
+        ul {
+          padding: 13px 30px;
+          li {
+            font-size: 26px;
+            padding: 17px 36px;
+            margin-right: 12px;
+          }
+        }
+      }
+
+      .search__contents {
+        height: 666px;
+        .search__inner {
+          ul {
+            li {
+              padding: 12px;
+              a {
+                width: 204px;
+                height: 185px;
+              }
+              .ryan {
+                background-size: contain;
+              }
+              .appeach {
+                background-size: contain;
+              }
+              .muzi {
+                background-size: contain;
+              }
+              .frodo {
+                background-size: contain;
+              }
+              .neo {
+                background-size: contain;
+              }
+              .tube {
+                background-size: contain;
+              }
+              .jayG {
+                background-size: contain;
+              }
+              .con {
+                background-size: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

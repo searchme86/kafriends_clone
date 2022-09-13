@@ -1,0 +1,366 @@
+@charset "utf-8";
+
+@import "../scss/base/reset";
+
+body {
+    font-family: "NotoSans Light", "Malgun Gothic", "맑은 고딕",
+        "Apple SD Gothic Neo", "돋움", dotum, sans-serif;
+}
+
+.wrap {
+    position: relative;
+    .content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 520px;
+        margin-left: -260px;
+
+        .hasEmail {
+            .hasEmail__title {
+                padding: 46px 0 40px 0;
+                a {
+                    display: block;
+                    .kakaoLogin {
+                        width: 88px;
+                        margin: 0 auto;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            .hasEmail__content {
+                border: 1px solid #e5e5e5;
+                .inner-container {
+                    width: 379px;
+                    margin: 59px 69px 74px 70px;
+                    .inner-title {
+                        font-size: 22px;
+                        line-height: 1.6;
+                        padding-bottom: 43px;
+                    }
+                    .form__formArea {
+                        .form__agree {
+                            .form__check {
+                                padding-left: 28px;
+                                p {
+                                    font-size: 12px;
+                                    color: #9b9b9b;
+                                    line-height: 1.5;
+                                    padding: 5px 0 9px 0;
+                                    font-weight: bold;
+                                }
+                                .agreeAll {
+                                    strong {
+                                        font-weight: bold;
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                        .form__checkall {
+                            input[type="checkbox"] + label .chkbox {
+                                display: inline-block;
+                                height: 25px;
+                                line-height: 17px;
+                                padding: 1px 0 0 28px;
+                                box-sizing: border-box;
+                                font-size: 17px;
+                                color: #333;
+                                vertical-align: top;
+                                background: url("../../img/pages/login/status_unchecked.png")
+                                    no-repeat;
+                                cursor: pointer;
+                            }
+
+                            input[type="checkbox"]:checked {
+                                & + label .chkbox {
+                                    background: url("../../img/pages/login/status_checked.png")
+                                        no-repeat;
+                                }
+                            }
+                        }
+                        .form__agreeSub {
+                            padding: 21px 0 30px;
+                            border-top: 1px solid #e5e5e5;
+                        }
+                        .form__checkbox {
+                            padding: 5px 0 11px 0;
+                            input[type="checkbox"] + label .chkbox {
+                                display: inline-block;
+                                height: 25px;
+                                line-height: 17px;
+                                padding: 1px 0 0 28px;
+                                box-sizing: border-box;
+                                font-size: 15px;
+                                color: #333;
+                                vertical-align: top;
+                                background: url("../../img/pages/login/status_unchecked.png")
+                                    no-repeat;
+                                cursor: pointer;
+                            }
+
+                            input[type="checkbox"]:checked {
+                                & + label .chkbox {
+                                    background: url("../../img/pages/login/status_checked.png")
+                                        no-repeat;
+                                }
+                            }
+
+                            &.on {
+                                input[type="checkbox"] + label .chkbox {
+                                    display: inline-block;
+                                    height: 25px;
+                                    line-height: 17px;
+                                    padding: 1px 0 0 28px;
+                                    box-sizing: border-box;
+                                    font-size: 14px;
+                                    color: #333;
+                                    vertical-align: top;
+                                    background: url("../../img/pages/login/status_checked.png")
+                                        no-repeat;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        .form__total {
+                            position: relative;
+                            .form__check {
+                                padding-left: 28px;
+                                p {
+                                    font-size: 12px;
+                                    color: #9b9b9b;
+                                    line-height: 1.5;
+                                    padding: 5px 0 9px 0;
+                                    font-weight: bold;
+                                }
+                            }
+                            button {
+                                position: absolute;
+                                display: block;
+                                top: 0;
+                                right: 0;
+                                width: 8px;
+                                height: 12px;
+                                background: url("../../img/pages/login/btn-more.png")
+                                    #fff no-repeat;
+                            }
+                        }
+                        .form__checkbox-more {
+                            .agreement-more {
+                                float: right;
+                                display: block;
+                                width: 8px;
+                                height: 12px;
+                                background: url("../../img/pages/login/btn-more.png")
+                                    #fff no-repeat;
+                            }
+                            &:after {
+                                content: " ";
+                                display: block;
+                                clear: both;
+                            }
+                        }
+                        .form__button {
+                            .btn-submit {
+                                display: block;
+                                width: 100%;
+                                height: 50px;
+                                line-height: 50px;
+                                font-size: 14px;
+                                text-align: center;
+                                background: #f6f6f6;
+                                border-radius: 5px;
+                                &.on {
+                                    background: #ffe500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .gagao__footer {
+            .footer__wrap {
+                text-align: center;
+                .policy {
+                    .policy-list {
+                        position: relative;
+                        margin: 43px 0 16px 0;
+                        font-size: 0;
+                        li {
+                            display: inline-block;
+                            padding-right: 20px;
+
+                            &:first-child {
+                                padding-right: 20px;
+                            }
+                            &:nth-child(2) {
+                                font-weight: bold;
+                                color: #4c4c4c;
+                                font-family: NotoSans-Bold, sans-serif;
+                            }
+
+                            &:last-child {
+                                position: relative;
+                                &:after {
+                                    content: " ";
+                                    display: block;
+                                    position: absolute;
+                                    width: 9px;
+                                    height: 5px;
+                                    top: 4px;
+                                    right: 5px;
+                                    background: url("../../img/pages/login/footer_txt_up.png")
+                                        no-repeat;
+                                }
+                            }
+
+                            a {
+                                font-size: 11px;
+                            }
+                        }
+                    }
+
+                    .policy-language {
+                        ul {
+                            display: none;
+                            li {
+                                height: 42px;
+                                line-height: 42px;
+                                .language-selected {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+
+                    .policy-language--up {
+                        position: relative;
+                        ul {
+                            display: none;
+                            width: 90px;
+                            position: absolute;
+                            top: -130px;
+                            right: 23px;
+                            height: 126px;
+                            font-size: 11px;
+                            border: 1px solid #eeeeee;
+                            box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 13px;
+                        }
+                    }
+
+                    .policy-language--highlighted {
+                        background: #ffffff;
+
+                        .language-selected {
+                            background: #eeeeee;
+                        }
+                    }
+
+                    .policy-copyright {
+                        color: #7c88a9;
+                        font-size: 12px;
+                        line-height: 1.5;
+                    }
+
+                    .policy-copyright--highlighted {
+                        .company {
+                            color: #7c7c7c;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1090px) {
+}
+
+@media screen and (max-width: 1066px) {
+}
+
+@media screen and (max-width: 1066px) {
+}
+
+@media screen and (max-width: 910px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+##Device = 데스크탑
+##Screen = 1281px 이상 해상도 데스크탑
+*/
+
+@media (min-width: 1281px) {
+    //CSS
+}
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+##Device = 랩탑, 데스크탑
+##Screen = 1025px에서 1280px 사이
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    //CSS
+}
+
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(세로),
+##Screen = 768px에서 1024px 사이
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    //CSS
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(가로)
+##Screen = 768px에서 1024px 사이
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    //CSS
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+##Device = 저해상도 태블릿, 모바일(가로)
+##Screen = 481px에서 767px 사이
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    //CSS
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+##Screen = 320px에서 479px 사이
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    //CSS
+}

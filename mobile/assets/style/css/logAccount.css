@@ -1,0 +1,386 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+html,
+body {
+  font-size: 15px;
+  font-family: NotoSans-Regular, AppleSDGothicNeo-Regular, "맑은 고딕", Malgun Gothic, "돋움", dotum, sans-serif;
+}
+
+.mobile .content {
+  width: 100%;
+}
+
+.mobile .content .content__bg {
+  width: 100%;
+  height: 72vw;
+  margin: 0 auto;
+  background: url("../../img/pages/login/login_befere_bg.png") center bottom #ffdc00 no-repeat;
+}
+
+.mobile .content .contnet__txt {
+  padding: 2.933333333333333vw 0 0 3.4666666666666663vw;
+  font-size: 1.93333rem;
+  line-height: 8.799999999999999vw;
+}
+
+.mobile .content .contnet__txt .bold {
+  font-weight: bold;
+}
+
+.mobile .content .content__info {
+  padding: 7.466666666666668vw 2.4vw 0 2.4vw;
+}
+
+.mobile .content .content__info .btn__login {
+  display: block;
+  width: 100%;
+  padding: 2.666666666666667vw 0;
+  font-size: 0.93333rem;
+  font-weight: bold;
+  margin-bottom: 43px;
+  border-color: #ffdc00;
+  border-radius: 8vw;
+  text-align: center;
+  background: url("../../img/pages/login/logo__kakao.png") center left 20.53333vw #ffdc00 no-repeat;
+}
+
+.mobile .content .content__info .content__attention {
+  padding: 0 5.333333333333334vw 0 5.333333333333334vw;
+  font-size: 0.86667rem;
+  padding-bottom: 16.8vw;
+}
+
+.mobile .content .content__info .content__attention .content__title {
+  display: block;
+}
+
+.mobile .content .content__info .content__attention .content__list li {
+  position: relative;
+  padding-top: 6.133333333333333vw;
+  line-height: 1.4;
+  font-size: 0.8rem;
+}
+
+.mobile .content .content__info .content__attention .content__list li:before {
+  content: " ";
+  display: block;
+  width: 0.5333333333333333vw;
+  height: 0.5333333333333333vw;
+  position: absolute;
+  top: 8vw;
+  left: -2.666666666666667vw;
+  background: url("../../img/pages/login/dot.png") no-repeat;
+}
+
+@media screen and (min-width: 414px) {
+  .mobile .content .content__info .btn__login {
+    margin-bottom: 66px;
+  }
+}
+
+@media screen and (min-width: 667px) {
+  .mobile .content {
+    padding-top: 0.8995502248875562vw;
+  }
+  .mobile .content .content__bg {
+    height: 38.830584707646175vw;
+  }
+  .mobile .content .contnet__txt {
+    padding: 1.6491754122938531vw 0 0 1.9490254872563717vw;
+    font-size: 4.3478260869565215vw;
+    line-height: 4.94752623688156vw;
+  }
+  .mobile .content .content__info {
+    padding: 4.7976011994003vw 1.3493253373313343vw 0 1.3493253373313343vw;
+  }
+  .mobile .content .content__info .btn__login {
+    background: url("../../img/pages/login/logo__kakao.png") center left 222px #ffdc00 no-repeat;
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .mobile .content {
+    padding-top: 0.8152173913043478vw;
+  }
+  .mobile .content .content__bg {
+    height: 35.190217391304344vw;
+  }
+  .mobile .content .contnet__txt {
+    padding: 1.766304347826087vw 0 0 1.766304347826087vw;
+  }
+  .mobile .content .content__info {
+    padding: 5.0271739130434785vw 1.2228260869565217vw 0 1.2228260869565217vw;
+  }
+  .mobile .content .content__info .btn__login {
+    background: url("../../img/pages/login/logo__kakao.png") center left 34.51087vw #ffdc00 no-repeat;
+  }
+  .mobile .content .content__info .content__attention {
+    padding: 0 2.717391304347826vw 2.717391304347826vw 1.4945652173913044vw;
+  }
+}

@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+@import '../base/reset';
+@import '../base/border';
+@import '../base/color';
+@import '../base/font';
+@import '../base/shape';
+@import '../base/space';
+
+// 웹
+
+// 모바일, 상세페이지
+// 제품 텍스트 style
+
+@mixin content__inner {
+  padding: $padding_content__inner;
+}
+
+@mixin padding_item__sub-title {
+  padding: $padding_item__sub-title;
+}
+
+@mixin item__title {
+  font-size: $font_item__title;
+  line-height: $line-height_item__title;
+  padding: $padding_item__title;
+}
+
+@mixin item__sub-title {
+  display: block;
+  font-size: $font_item__sub-title;
+  padding-bottom: 10px;
+}
+
+@mixin item__bottom-title {
+  display: block;
+  text-align: center;
+  padding-top: $padding_item__bottom-title;
+  font-size: $font_item__bottom-title;
+}
+
+@mixin img {
+  width: 100%;
+  height: auto;
+}
+
+@mixin this_important {
+  font-size: 4.26667vw;
+  color: red;
+  font-weight: bold;
+}

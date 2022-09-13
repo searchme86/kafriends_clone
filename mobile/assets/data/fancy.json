@@ -1,0 +1,42 @@
+[
+  {
+    "rank": "7",
+    "title": "해피위크<br> 코너포켓-라이언",
+    "thumnail": "/assets/img/pages/hot/fancy/fancy_rank_07.png",
+    "alt": "",
+    "price": {
+      "original": "4,500",
+      "discount": "0"
+    }
+  },
+  {
+    "rank": "8",
+    "title": "마린<br> 데코스티커 라이언",
+    "thumnail": "/assets/img/pages/hot/fancy/fancy_rank_08.png",
+    "alt": "",
+    "price": {
+      "original": "5,000",
+      "discount": "0"
+    }
+  },
+  {
+    "rank": "9",
+    "title": "해피위크<br> 편지지세트_라이언",
+    "thumnail": "/assets/img/pages/hot/fancy/fancy_rank_09.png",
+    "alt": "",
+    "price": {
+      "original": "4,000",
+      "discount": "0"
+    }
+  },
+  {
+    "rank": "10",
+    "title": "선물용<br>쇼핑백(대)",
+    "thumnail": "/assets/img/pages/hot/fancy/fancy_rank_10.png",
+    "alt": "",
+    "price": {
+      "original": "1,000",
+      "discount": "0"
+    }
+  }
+]

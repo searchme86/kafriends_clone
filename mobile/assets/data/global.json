@@ -1,0 +1,245 @@
+[
+  {
+    "thumnail": "../assets/img/pages/store/store_seoul_duty_silla.png",
+    "alt": "카카오프렌즈샵 신라아이파크 면세 용산점",
+    "title": "신라아이파크 면세 용산점",
+    "phoneNum": "02-490-3927",
+    "hours": "매일 9:00 - 21:00",
+    "address": "서울 용산구 한강대로23길 55 (한강로3가,용산민자역사) 아이파크몰 6층",
+    "link": "https://place.map.kakao.com/26945558"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_kyung_hanam.png",
+    "alt": "카카오프렌즈샵 스타필드 하남점",
+    "title": "스타필드 하남점",
+    "phoneNum": "031-8072-8231",
+    "hours": "매일 10:00 - 22:00",
+    "address": "경기 하남시 미사대로 750 (신장동 스타필드 하남) 스타필드 하남 1층",
+    "link": "https://place.map.kakao.com/1637623109"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_seoul_duty_ssg.png",
+    "alt": "카카오프렌즈샵 신세계면세점 명동점",
+    "title": "신세계면세점 명동점",
+    "phoneNum": "02-6370-4278",
+    "hours": "매일 9:00 - 20:30",
+    "address": "서울 중구 소공로 63 (충무로1가,신세계백화점건물) 신세계면세점 11층",
+    "link": "https://place.map.kakao.com/1777071768"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_seoul_lotteWorldMall.png",
+    "alt": "카카오프렌즈샵 롯데월드몰 잠실점",
+    "title": "롯데월드몰 잠실점",
+    "phoneNum": "02-3213-4514",
+    "hours": "매일 10:30 - 22:00",
+    "address": "서울 송파구 올림픽로 300(신천동) 잠실 롯데 월드몰 5층",
+    "link": "https://place.map.kakao.com/27375630"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_seoul_department_gangnam.png",
+    "alt": "카카오프렌즈샵 신세계백화점 강남점",
+    "title": "신세계백화점 강남점",
+    "phoneNum": "02-3479-1328",
+    "hours": "매일 10:30 - 22:00",
+    "address": "서울 서초구 신반포로 176 (반포동,센트럴시티빌딩) 신세계백화점 강남점 지하1층",
+    "link": "javascript:void(0);"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_seoul_department_pangyo.png",
+    "alt": "카카오프렌즈샵 현대백화점 판교점",
+    "title": "현대백화점 판교점",
+    "phoneNum": "031-5170-2451",
+    "hours": "매일 10:30 - 20:00 (쇼핑몰 전체 정기휴무일 휴점)",
+    "address": "경기 성남시 분당구 판교역로 146번길 8 (백현동) 현대백화점 판교점 유플렉스 4층",
+    "link": "https://place.map.kakao.com/26944943"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_seoul_yeouido.png",
+    "alt": "카카오프렌즈샵 CGV 여의도점",
+    "title": "CGV 여의도점",
+    "phoneNum": "02-6137-5550",
+    "hours": "매일 10:00 - 22:00",
+    "address": "서울 영등포구 여의도동 23 IFC몰 지하3층",
+    "link": "https://place.map.kakao.com/26945557"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_pusan_department.png",
+    "alt": "카카오프렌즈샵 롯데백화점 부산점",
+    "title": "롯데백화점 부산점",
+    "phoneNum": "051-810-4757",
+    "hours": "매일 10:30 - 20:00",
+    "address": "부산 부산진구 가야대로 772 (부전동) 롯데백화점 부산본점 7층",
+    "link": "https://place.map.kakao.com/26944403"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_seoul_coex.png",
+    "alt": "카카오프렌즈샵 스타필드 코엑스몰점",
+    "title": "스타필드 코엑스몰점",
+    "phoneNum": "02-6002-1880",
+    "hours": "매일 10:30 - 22:00",
+    "address": "서울 강남구 영동대로 513 (삼성동,코엑스) 코엑스몰. B1층 C108호",
+    "link": "https://place.map.kakao.com/26338954"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_pusan_department.png",
+    "alt": "카카오프렌즈샵 롯데백화점 부산",
+    "title": "롯데백화점 부산점",
+    "phoneNum": "051-810-4757",
+    "hours": "매일 10:30 - 20:00",
+    "address": "부산 부산진구 가야대로 772 (부전동) 롯데백화점 부산본점 7층",
+    "link": "https://place.map.kakao.com/26944403"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_seoul_coex.png",
+    "alt": "카카오프렌즈샵 스타필드 코엑스몰점",
+    "title": "스타필드 코엑스몰점",
+    "phoneNum": "02-6002-1880",
+    "hours": " 매일 10:30 - 22:00",
+    "address": "서울 강남구 영동대로 513 (삼성동,코엑스) 코엑스몰. B1층 C108호",
+    "link": "https://place.map.kakao.com/26338954"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_daegu_department.png",
+    "alt": "카카오프렌즈샵 현대백화점 대구점",
+    "title": "현대백화점 대구점",
+    "phoneNum": "053-245-3039",
+    "hours": "매일 10:30 - 21:00 (쇼핑몰 전체 정기휴무일 휴점)",
+    "address": " 대구 중구 달구벌대로 2077 (계산동2가, 현대백화점) 유플렉스 지하2층 아트리움 광장",
+    "link": "https://place.map.kakao.com/26395640"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_seoul_department_sinchon.png",
+    "alt": "카카오프렌즈샵 현대백화점 신촌점",
+    "title": "현대백화점 신촌점",
+    "phoneNum": "02-3145-1722",
+    "hours": "매일 10:30 - 22:00 (쇼핑몰 전체 정기휴무일 휴점)",
+    "address": "서울 서대문구 신촌로 83 (창천동, 현대백화점 신촌점) 본관 지하2층",
+    "link": "https://place.map.kakao.com/1786432255"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_kyung_ak.png",
+    "alt": "카카오프렌즈샵 수원 AK점",
+    "title": "수원 AK점",
+    "phoneNum": "031-240-1293",
+    "hours": "매일 10:30 - 22:00",
+    "address": "경기도 수원시 팔달구 덕영대로 924 AK플라자수원점",
+    "link": "https://place.map.kakao.com/108414597"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_kyung_giheung.png",
+    "alt": "카카오프렌즈샵 롯데프리미엄 아울렛 기흥점",
+    "title": "롯데프리미엄 아울렛 기흥점",
+    "phoneNum": "031-8036-3180",
+    "hours": "매일 11:00 - 20:30 (주말 21:00까지)",
+    "address": "경기도 용인시 기흥구 고매동 336 롯데프리미엄 아울렛 1층 F344",
+    "link": "https://place.map.kakao.com/2052047103"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_japan_studio_kakao_friends.png",
+    "alt": "카카오프렌즈샵 Studio Kakao Friends",
+    "title": "Studio Kakao Friends",
+    "phoneNum": "+81-3-6455-5556",
+    "hours": "매일 11:00 - 20:00",
+    "address": "도쿄도 시부야구 진구마에 4-25-11",
+    "link": "javascript:void(0);"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_japan_apeach_omotesando.png",
+    "alt": "카카오프렌즈샵 Studio Kakao Friends",
+    "title": "Apeach Omotesando",
+    "phoneNum": "+81-3-6459-2025",
+    "hours": "매일 11:00 - 20:00",
+    "address": "도쿄도 시부야구 진구마에 4-25-9",
+    "link": "javascript:void(0);"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_jeju_space.png",
+    "alt": "카카오프렌즈샵 카카오프렌즈 Store@Jeju",
+    "title": "카카오프렌즈 Store@Jeju",
+    "phoneNum": "+82-2-6718-1679",
+    "hours": " 10:00 - 20:00",
+    "address": "제주특별자치도 제주시 첨단로 242 스페이스닷원 1층",
+    "link": "https://place.map.kakao.com/18059921"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_kyung_giheng_popup.png",
+    "alt": "카카오프렌즈샵 기흥휴게소점",
+    "title": "기흥휴게소점",
+    "phoneNum": "070-4821-0985",
+    "hours": "08:00 - 20:00",
+    "address": "경기 용인시 기흥구 공세로 173 가동",
+    "link": "https://place.map.kakao.com/994585880"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_kyung_siheung_bridge_square.png",
+    "alt": "카카오프렌즈샵 시흥하늘휴게소점",
+    "title": "시흥하늘휴게소점",
+    "phoneNum": "070-4821-0986",
+    "hours": "09:00 - 22:00",
+    "address": "경기도 시흥시 조남동 198-21 시흥하늘휴게소 (판교방향)",
+    "link": "https://place.map.kakao.com/483778217"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_kyung_gapyung_chuncheon.png",
+    "alt": "카카오프렌즈샵 가평(춘천방향)휴게소점",
+    "title": "가평(춘천방향)휴게소점",
+    "phoneNum": "070-4821-0718",
+    "hours": "08:00 - 20:00",
+    "address": "경기 가평군 설악면 미사리로 540번길 51",
+    "link": "https://place.map.kakao.com/1027070964"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_kyung_gapyeong_to_seoul.png",
+    "alt": "카카오프렌즈샵 가평(서울방향)휴게소점",
+    "title": "가평(서울방향)휴게소점",
+    "phoneNum": "070-4821-0719",
+    "hours": "08:30 - 20:30",
+    "address": "경기 가평군 설악면 미사리로 544",
+    "link": "https://place.map.kakao.com/1670858854"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_jeonju_hanok.png",
+    "alt": "카카오프렌즈 전주한옥마을점",
+    "title": "카카오프렌즈 전주한옥마을점",
+    "phoneNum": "063-285-1230",
+    "hours": "10:00 ~ 21:00",
+    "address": "전라북도 전주시 완산구 팔달로 126, 1층(전동)",
+    "link": "https://place.map.kakao.com/1831095361"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_jeju_shilla_duty_free.png",
+    "alt": "카카오프렌즈 신라면세점 제주점",
+    "title": "신라면세점 제주점",
+    "phoneNum": "064-710-7375",
+    "hours": "매일 09:30 ∼ 19:00",
+    "address": "제주특별자치도 제주시 노연로 69 신라면세점 4층",
+    "link": "https://place.map.kakao.com/151657875"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_kyung_shinsegae_duty_free_incheon.png",
+    "alt": "카카오프렌즈 신세계면세점 인천공항 T2점",
+    "title": "신세계면세점 인천공항 T2점",
+    "phoneNum": "032-743-8199",
+    "hours": "매일 06:30 ~ 21:30",
+    "address": "인천 중구 공항로 272 (운서동,인천공항) T1 3층 28게이트 부근",
+    "link": "https://place.map.kakao.com/1366732473"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_seoul_yongsan-popup-store.png",
+    "alt": "카카오프렌즈 용산역 팝업스토어",
+    "title": "용산역 팝업스토어",
+    "phoneNum": "070-4821-0987",
+    "hours": "08:00 ~ 22:00",
+    "address": "서울 용산구 한강대로 23길 55 용산역 3층 대합실",
+    "link": "https://place.map.kakao.com/63582914"
+  },
+  {
+    "thumnail": "../assets/img/pages/store/store_busan-station.png",
+    "alt": "카카오프렌즈 부산역점",
+    "title": "부산역점",
+    "phoneNum": "070-4821-0491",
+    "hours": "08:00 ~ 22:00",
+    "address": "부산 동구 중앙대로 206 부산역 2층 대합실",
+    "link": "https://place.map.kakao.com/1765203346"
+  }
+]

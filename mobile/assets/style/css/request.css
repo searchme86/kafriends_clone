@@ -1,0 +1,636 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+html,
+body {
+  font-size: 15px;
+  font-family: NotoSans-Regular, AppleSDGothicNeo-Regular, "맑은 고딕", Malgun Gothic, "돋움", dotum, sans-serif;
+}
+
+.mobile .content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.mobile .content__inner {
+  position: relative;
+  padding: 2.666666666666667vw 4.266666666666667vw 0 4.266666666666667vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mobile .content__inner .form {
+  width: 100%;
+  padding-bottom: 17.599999999999998vw;
+}
+
+.mobile .content__inner .form__inner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mobile .content__inner .form__inner .bg {
+  width: 100%;
+  height: 32.800000000000004vw;
+  border-radius: 1.3333333333333335vw;
+  background: url("../../img/pages/help/request_bg.png") #68b5af right bottom no-repeat;
+}
+
+.mobile .content__inner .form__inner .form__title {
+  padding: 10.133333333333333vw 0 3.2vw 0;
+}
+
+.mobile .content__inner .form__inner .form__summary {
+  padding: 2.666666666666667vw 0 0 0;
+  font-weight: bold;
+}
+
+.mobile .content__inner .form__inner form {
+  position: relative;
+  padding-top: 6.133333333333333vw;
+}
+
+.mobile .content__inner .form__inner form .form__contents {
+  width: 100%;
+}
+
+.mobile .content__inner .form__inner form .form__contents li {
+  padding-bottom: 6.4vw;
+}
+
+.mobile .content__inner .form__inner form .form__contents li .form__label {
+  float: left;
+  width: 20%;
+}
+
+.mobile .content__inner .form__inner form .form__contents li .form__label .form__txt {
+  display: block;
+  font-weight: bold;
+  line-height: 10.666666666666668vw;
+}
+
+.mobile .content__inner .form__inner form .form__contents li .form__input {
+  float: left;
+  width: 80%;
+}
+
+.mobile .content__inner .form__inner form .form__contents li .form__input select {
+  width: 100%;
+  padding: 2.666666666666667vw 0 2.666666666666667vw 2.666666666666667vw;
+  -moz-appreance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background: url("../../img/pages/help/select_down.png") 95% 50% no-repeat;
+  border-radius: 1.3333333333333335vw;
+}
+
+.mobile .content__inner .form__inner form .form__contents li .form__input select::-ms-expand {
+  display: none;
+}
+
+.mobile .content__inner .form__inner form .form__contents li .form__input .form__txt {
+  display: block;
+  padding: 2.666666666666667vw 0 0 2.666666666666667vw;
+}
+
+.mobile .content__inner .form__inner form .form__contents li .form__input input {
+  display: block;
+  width: 100%;
+  padding: 2.666666666666667vw 0 2.666666666666667vw 2.666666666666667vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0.86667rem;
+  border-radius: 1.3333333333333335vw;
+}
+
+.mobile .content__inner .form__inner form .form__contents li .form__input .form__info {
+  font-size: 0.8rem;
+  margin: 1.3333333333333335vw 0 0 1.3333333333333335vw;
+}
+
+.mobile .content__inner .form__inner form .form__contents li .form__input .form__info p + p {
+  margin: 1.3333333333333335vw 0 1.3333333333333335vw 0;
+}
+
+.mobile .content__inner .form__inner form .form__contents li .form__input textarea {
+  display: block;
+  width: 100%;
+  height: 40vw;
+  overflow: hidden;
+  padding: 2.666666666666667vw 2.666666666666667vw 2.666666666666667vw 2.666666666666667vw;
+  font-size: 0.86667rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1.3333333333333335vw;
+}
+
+.mobile .content__inner .form__inner form .form__contents li:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.mobile .content__inner .form__inner form .form__contents li:nth-child(3) {
+  height: 36.266666666666666vw;
+}
+
+.mobile .content__inner .form__inner form .form__btn {
+  display: block;
+  float: right;
+  width: 37.6vw;
+  height: 12vw;
+  background: #3c404b;
+  border-radius: 2.666666666666667vw;
+}
+
+.mobile .content__inner .form__inner form .form__btn .form__txt {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.mobile .content__inner .form__inner form .form__btn:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+##Device = 데스크탑
+##Screen = 1281px 이상 해상도 데스크탑
+*/
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+##Device = 랩탑, 데스크탑
+##Screen = 1025px에서 1280px 사이
+*/
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(세로),
+##Screen = 768px에서 1024px 사이
+*/
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(가로)
+##Screen = 768px에서 1024px 사이
+*/
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+##Device = 저해상도 태블릿, 모바일(가로)
+##Screen = 481px에서 767px 사이
+*/
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+##Screen = 320px에서 479px 사이
+*/

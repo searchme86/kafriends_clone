@@ -1,0 +1,210 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+body {
+  font-family: "NotoSans Light", "Malgun Gothic", "맑은 고딕", "Apple SD Gothic Neo", "돋움", dotum, sans-serif;
+}
+
+.wrap .content .content__title {
+  font-size: 22px;
+  padding: 19px 0px 4px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .content .question {
+  width: 1028px;
+  max-width: 1028px;
+  margin: 0 auto;
+}
+
+.wrap .content .question .content__info .content__intro {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.wrap .content .question .content__info .btn--submit {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #3c404b;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 24px;
+  font-weight: bold;
+}
+
+.wrap .content .question .gift {
+  padding-bottom: 80px;
+}
+
+.wrap .content .question .gift .gift__title {
+  display: block;
+  padding: 60px 0 16px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 19px;
+}
+
+.wrap .content .question .gift .content__message {
+  background: #f7f7f7;
+  padding: 26px 20px 61px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .content .question .gift .content__message ul li {
+  padding-top: 39px;
+}
+
+.wrap .content .question .gift .content__message ul li .text-group .text-title {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.wrap .content .question .gift .content__message ul li .text-group .text-info {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.wrap .content .question .gift .content__message ul li .text-group .text-list ul li {
+  font-size: 15px;
+  padding: 7px 0 0 11px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.wrap .content .question .gift .content__message ul li .text-group .text-list ul li .arrow {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 5px;
+  top: -3px;
+  background: url("../../img/pages/product/arrow.png") no-repeat;
+}
+
+.wrap .content .question .gift .content__message ul li .text-group .text-list ul .dot {
+  position: relative;
+}
+
+.wrap .content .question .gift .content__message ul li .text-group .text-list ul .dot:before {
+  content: " ";
+  display: block;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 18px;
+  left: 0;
+  background: url("../../img/pages/product/dot.png") no-repeat;
+}
+
+.wrap .content .question .gift .content__message ul li .text-group .bundle .dot + li {
+  padding-top: 0;
+}
+
+.wrap .content .question .gift .content__message ul li .text-group .bundle .pt-0 {
+  padding-top: 0;
+}
+
+.wrap .content .question .gift .content__message ul li:first-child {
+  padding-top: 0;
+}

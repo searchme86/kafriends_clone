@@ -1,0 +1,281 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+.wrap {
+  position: relative;
+}
+
+.wrap .content {
+  position: relative;
+}
+
+.wrap .content .intro-header {
+  width: 100%;
+  background: #fddc2f;
+}
+
+.wrap .content .intro-header .intro-txt {
+  width: 1060px;
+  height: 480px;
+  margin: 0 auto;
+  background: url("../../img/pages/intro/bg_kakao_friends.png") bottom center no-repeat;
+  background-size: contain;
+}
+
+.wrap .content .intro-header .intro-txt .intro-logo {
+  width: 226px;
+  padding-top: 80px;
+  padding-left: 24px;
+}
+
+.wrap .content .intro-header .intro-txt .intro-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.wrap .content .intro-header .intro-txt .intro-title {
+  font-size: 25px;
+  padding-top: 20px;
+  padding-left: 24px;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: bold;
+  text-shadow: 0 1px 1px #000;
+}
+
+.wrap .content .intro-content {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 80px;
+  position: relative;
+}
+
+.wrap .content .intro-content .intro-aside {
+  display: block;
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.7;
+  left: 0;
+}
+
+.wrap .content .intro-content .intro-main {
+  float: right;
+  width: 730px;
+}
+
+.wrap .content .intro-content .intro-main .intro-message {
+  padding-top: 46px;
+}
+
+.wrap .content .intro-content .intro-main .intro-message .message {
+  font-size: 14px;
+  color: #9a9a9a;
+  line-height: 1.6;
+}
+
+.wrap .content .intro-content .intro-main .intro-message .message .message-left {
+  float: left;
+  width: 301px;
+  padding-bottom: 80px;
+}
+
+.wrap .content .intro-content .intro-main .intro-message .message .message-right {
+  float: right;
+  width: 335px;
+}
+
+.wrap .content .intro-content .intro-main .intro-message .message .message-right .btn-more {
+  display: block;
+  width: 134px;
+  height: 38px;
+  margin-top: 34px;
+  background: url("../../img/pages/intro/btn_more.png") #fff center right 16px no-repeat;
+  border: 1px solid #000;
+}
+
+.wrap .content .intro-content .intro-main .intro-message .message .message-right .btn-more span {
+  display: block;
+  line-height: 38px;
+  font-size: 13px;
+  padding-left: 19px;
+  font-weight: bold;
+}
+
+.wrap .content .intro-content .intro-main .intro-message .message .info_subject {
+  display: block;
+  color: #000;
+  font-size: 15px;
+  padding-bottom: 19px;
+}
+
+.wrap .content .intro-content .intro-main .intro-message .message:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrap .content .intro-content .intro-main .intro-message .message-bottom {
+  padding-bottom: 260px;
+}
+
+.wrap .content .intro-content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@media (min-width: 1281px) {
+  .wrap .content .intro-header .intro-txt {
+    width: 1200px;
+  }
+  .wrap .content .intro-content {
+    width: 1200px;
+  }
+  .wrap .content .intro-content .intro-aside {
+    padding-left: 24px;
+  }
+}
+
+@media (min-width: 1081px) and (max-width: 1280px) {
+  .wrap .content .intro-header .intro-txt {
+    width: 1180px;
+  }
+  .wrap .content .intro-content {
+    width: 1180px;
+  }
+  .wrap .content .intro-content .intro-aside {
+    padding-left: 24px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+  .wrap .content .intro-header .intro-txt {
+    width: 1060px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrap {
+    position: relative;
+  }
+  .wrap .content .intro-header .intro-txt {
+    width: 751px;
+    height: 396px;
+  }
+  .wrap .content .intro-header .intro-txt .intro-logo {
+    padding-top: 30px;
+  }
+  .wrap .content .intro-header .intro-txt .intro-title {
+    font-size: 25px;
+    padding-top: 6px;
+  }
+  .wrap .content .intro-content {
+    width: 750px;
+    padding-top: 30px;
+  }
+  .wrap .content .intro-content .intro-aside {
+    position: static;
+    left: 0;
+    padding-left: 18px;
+  }
+  .wrap .content .intro-content .intro-main {
+    float: none;
+    width: 700px;
+    margin-top: 30px;
+    margin-left: 18px;
+  }
+}

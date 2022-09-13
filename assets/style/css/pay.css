@@ -1,0 +1,689 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+body {
+  font-family: "NotoSans Light", "Malgun Gothic", "맑은 고딕", "Apple SD Gothic Neo", "돋움", dotum, sans-serif;
+}
+
+.wrap .content .pay {
+  width: 640px;
+  margin: 0 auto;
+  padding: 72px 0 247px 0;
+}
+
+.wrap .content .pay .pay-section {
+  border-top: 1px solid #000000;
+  padding-bottom: 35px;
+}
+
+.wrap .content .pay .pay-section .pay-title {
+  display: block;
+  font-size: 23px;
+  margin: 28px 0 28px 0;
+}
+
+.wrap .content .pay .pay-section .item-header {
+  width: 100%;
+  border-bottom: 1px solid #f5f6f6;
+  padding-bottom: 15px;
+}
+
+.wrap .content .pay .pay-section .item-header .item-thumnail {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #fafafa;
+  border-radius: 7px;
+  margin-right: 14px;
+}
+
+.wrap .content .pay .pay-section .item-header .item-thumnail img {
+  width: 100%;
+  height: auto;
+}
+
+.wrap .content .pay .pay-section .item-header .itme-info {
+  float: left;
+  width: 526px;
+  position: relative;
+  height: 80px;
+}
+
+.wrap .content .pay .pay-section .item-header .itme-info .item-name {
+  font-size: 13px;
+  padding: 6px 0 46px 0;
+}
+
+.wrap .content .pay .pay-section .item-header .itme-info select {
+  display: inline-block;
+  width: 64px;
+  height: 31px;
+  padding-left: 11px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e3e5e8;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 14px;
+  -webkit-appearnce: none;
+  -moz-apperarnce: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../../img/pages/pay/form__select__down.png") center right 8px no-repeat;
+}
+
+.wrap .content .pay .pay-section .item-header .itme-info select::-ms-expand {
+  display: none;
+}
+
+.wrap .content .pay .pay-section .item-header .itme-info .total-price {
+  position: absolute;
+  top: 66px;
+  right: 3px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.wrap .content .pay .pay-section .item-header .itme-info .total-price .price-unit {
+  font-size: 13px;
+}
+
+.wrap .content .pay .pay-section .item-header .itme-info .btn-item-delete {
+  display: block;
+  width: 11px;
+  height: 10px;
+  background: #fff;
+  position: absolute;
+  top: 11px;
+  right: 3px;
+  background: url("../../img/pages/pay/btn__item__delete.png") no-repeat;
+}
+
+.wrap .content .pay .pay-section .item-header:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrap .content .pay .pay-section .pay-item {
+  padding-top: 30px;
+}
+
+.wrap .content .pay .pay-section .pay-item li {
+  padding-bottom: 10px;
+}
+
+.wrap .content .pay .pay-section .pay-item li .form-left {
+  position: relative;
+  float: left;
+  display: block;
+  width: 50%;
+  text-align: left;
+  font-size: 15px;
+}
+
+.wrap .content .pay .pay-section .pay-item li .form-left .point {
+  display: block;
+  position: absolute;
+  width: 101px;
+  top: 15px;
+  left: 0;
+}
+
+.wrap .content .pay .pay-section .pay-item li .form-left .point .pointNum {
+  display: inline-block;
+  color: #3f87ff;
+  font-size: 12px;
+  font-weight: bold;
+  vertical-align: top;
+  position: relative;
+  top: 1px;
+}
+
+.wrap .content .pay .pay-section .pay-item li .form-left .point .pointNum .initial-Point {
+  display: inline;
+}
+
+.wrap .content .pay .pay-section .pay-item li .form-left .gift {
+  display: inline-block;
+  width: 86px;
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+
+.wrap .content .pay .pay-section .pay-item li .form-right {
+  float: right;
+  display: block;
+  width: 50%;
+  text-align: right;
+}
+
+.wrap .content .pay .pay-section .pay-item li .form-right .pointBox {
+  position: relative;
+}
+
+.wrap .content .pay .pay-section .pay-item li .form-right .pointBox input[type="number"] {
+  display: block;
+  width: 320px;
+  height: 45px;
+  line-height: 45px;
+  text-align: right;
+  border: 1px solid #e3e5e8;
+  border-radius: 7px;
+  padding-right: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 17px;
+}
+
+.wrap .content .pay .pay-section .pay-item li .form-right .pointBox:before {
+  display: block;
+  content: "-";
+  position: absolute;
+  top: 14px;
+  left: 17px;
+}
+
+.wrap .content .pay .pay-section .pay-item li .btn-card {
+  display: block;
+  width: 100px;
+  height: 46px;
+  line-height: 46px;
+  background: #eff0f4;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.wrap .content .pay .pay-section .pay-item li .item-total {
+  display: block;
+  font-size: 14px;
+}
+
+.wrap .content .pay .pay-section .pay-item li .item-total .price-unit {
+  font-size: 14px;
+}
+
+.wrap .content .pay .pay-section .pay-item li .price-total {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.wrap .content .pay .pay-section .pay-item li .final-added {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.wrap .content .pay .pay-section .pay-item li .pay-total {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.wrap .content .pay .pay-section .pay-item li .delivery-price {
+  font-size: 14px;
+  color: #9a9a9e;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .method-title {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 19px;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-tab {
+  margin-bottom: 15px;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-tab .credit-tablist > li {
+  float: left;
+  width: 50%;
+  height: 116px;
+  line-height: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #e3e5e8;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-tab .credit-tablist > li.on {
+  border: 2px solid #000000;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-tab .credit-tablist .btn-kakao {
+  background: url("../../img/pages/pay/credit__kako_unselected.png") top 37px center no-repeat;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-tab .credit-tablist .btn-credit {
+  background: url("../../img/pages/pay/credit__card_unselected.png") top 37px center no-repeat;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-tab .credit-tablist:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-content {
+  margin-bottom: 20px;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-content .credit-list .kapay-area {
+  position: relative;
+  padding-bottom: 26px;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-content .credit-list .kapay-area p {
+  width: 640px;
+  height: 39px;
+  font-size: 13px;
+  line-height: 39px;
+  background: #ffea01;
+  border-radius: 32px;
+  text-align: center;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-content .credit-list .kapay-area:before {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 10px;
+  height: 9px;
+  top: -9px;
+  left: 158px;
+  background: url("../../img/pages/pay/kapay_design.png") no-repeat;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-content .credit-list ul > li {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-content .credit-list ul > li .agreement input[type="checkbox"]
++ label
+span {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  padding: 1px 0 0 36px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  vertical-align: top;
+  background: url("../../img/pages/pay/agreement_unckecked.png") no-repeat;
+  cursor: pointer;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-content .credit-list ul > li .agreement input[type="checkbox"]:checked + label span {
+  background: url("../../img/pages/pay/agreement_ckecked.png") no-repeat;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-content .credit-list ul > li .agreement .agreeLabel {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  margin-left: 8px;
+  color: #9a9a9e;
+  font-size: 13px;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-content .credit-list ul > li .agreement .underline {
+  text-decoration: underline;
+}
+
+.wrap .content .pay .pay-section .pay-item li .payMethod .credit .credit-content .credit-list ul > li:last-child {
+  padding-top: 0;
+}
+
+.wrap .content .pay .pay-section .pay-item li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrap .content .pay .item {
+  border-top: 0;
+}
+
+.wrap .content .pay .address {
+  border-top: 1px solid #000000;
+}
+
+.wrap .content .pay .address .address-header {
+  padding-bottom: 10px;
+}
+
+.wrap .content .pay .address .address-header .item-receiver {
+  float: left;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.wrap .content .pay .address .address-header .check-address {
+  float: right;
+}
+
+.wrap .content .pay .address .address-header .check-address label span {
+  display: inline-block;
+  width: 100%;
+  height: 29px;
+  line-height: 26px;
+  padding-left: 32px;
+  font-size: 13px;
+  vertical-align: top;
+  background: url("../../img/pages/pay/agreement_unckecked.png") no-repeat;
+  cursor: pointer;
+}
+
+.wrap .content .pay .address .address-header .check-address input[type="checkbox"]:checked + label span {
+  background: url("../../img/pages/pay/agreement_ckecked.png") no-repeat;
+}
+
+.wrap .content .pay .address .address-header:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrap .content .pay .address .item-inputBox .selectBox select {
+  display: block;
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  padding-left: 13px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e3e5e8;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 12px;
+  margin: 0 0 6px 0;
+  -webkit-appearnce: none;
+  -moz-apperarnce: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../../img/pages/pay/form__select__down.png") center right 11px no-repeat;
+}
+
+.wrap .content .pay .address .item-inputBox .selectBox select::-ms-expand {
+  display: none;
+}
+
+.wrap .content .pay .address .item-inputBox .inputBox {
+  width: auto;
+  position: relative;
+}
+
+.wrap .content .pay .address .item-inputBox .inputBox input {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #e3e5e8;
+  border-radius: 4px;
+  background: #fff;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #e3e5e8;
+  padding-left: 13px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .content .pay .address .item-inputBox .inputBox textarea {
+  display: block;
+  width: 100%;
+  height: 80px;
+  resize: none;
+  border: 1px solid #e3e5e8;
+  border-radius: 2px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .content .pay .address .item-inputBox .inputBox .limit {
+  font-size: 11px;
+  color: #9a9a9a;
+  padding: 6px 0 39px 0;
+}
+
+.wrap .content .pay .address .item-inputBox .inputBox:before {
+  display: block;
+  content: " ";
+  width: 6px;
+  height: 5px;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  background: url("../../img/pages/pay/input__important.png") no-repeat;
+  z-index: 222;
+}
+
+.wrap .content .pay .address .item-inputBox .save-address {
+  font-size: 12px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.wrap .content .pay .address .item-inputBox .save-address input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 100%;
+  height: 29px;
+  line-height: 26px;
+  padding-left: 32px;
+  font-size: 13px;
+  vertical-align: top;
+  background: url("../../img/pages/pay/agreement_unckecked.png") no-repeat;
+  cursor: pointer;
+}
+
+.wrap .content .pay .address .item-inputBox .save-address input[type="checkbox"]:checked + label span {
+  background: url("../../img/pages/pay/agreement_ckecked.png") no-repeat;
+}
+
+.wrap .content .pay .address .item-inputBox .form-notice {
+  border-top: 1px solid #f2f2f2;
+  padding-top: 20px;
+}
+
+.wrap .content .pay .address .item-inputBox .form-notice .planned-date {
+  font-size: 14px;
+  padding-left: 23px;
+  background: url("../../img/pages/pay/item__delivery.png") top 3px left no-repeat;
+}
+
+.wrap .content .pay .address .item-inputBox .form-notice .remind {
+  font-size: 10px;
+  color: #9a9a9e;
+  padding-top: 10px;
+  line-height: 1.5;
+}
+
+.wrap .content .pay .money {
+  padding-bottom: 0;
+}
+
+.wrap .content .pay .money .money-header {
+  position: relative;
+}
+
+.wrap .content .pay .money .money-header .point {
+  display: block;
+  position: absolute;
+  top: 9px;
+  right: 0;
+  font-size: 13px;
+  color: #9a9a9e;
+  text-decoration: underline;
+}
+
+.wrap .content .pay .money .pay-item {
+  padding-top: 0;
+}
+
+.wrap .content .pay .money ul li:nth-child(5) {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #f5f6f6;
+}
+
+.wrap .content .pay .money ul li:last-child {
+  padding-top: 30px;
+}
+
+.wrap .content .pay .money:last-child {
+  padding-bottom: 0;
+}
+
+.wrap .content .pay .btn-pay-for {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+  background: #d4d7e1;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+##Device = 데스크탑
+##Screen = 1281px 이상 해상도 데스크탑
+*/
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+##Device = 랩탑, 데스크탑
+##Screen = 1025px에서 1280px 사이
+*/
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(세로),
+##Screen = 768px에서 1024px 사이
+*/
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(가로)
+##Screen = 768px에서 1024px 사이
+*/
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+##Device = 저해상도 태블릿, 모바일(가로)
+##Screen = 481px에서 767px 사이
+*/
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+##Screen = 320px에서 479px 사이
+*/

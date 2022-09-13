@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+// 공통
+@mixin fs($number) {
+  font-size: $number;
+}
+
+// 웹
+
+// 모바일, 상세페이지
+$font_item__title: 8vw;
+$font_item__sub-title: 6.4vw;

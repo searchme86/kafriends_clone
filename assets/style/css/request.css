@@ -1,0 +1,243 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#skip-navigation {
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: -9999px;
+  text-indent: -9999px;
+}
+
+#skip-navigation ul li a {
+  display: block;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#skip-navigation ul li a:focus,
+#skip-navigation ul li a:active {
+  background: #3c404b;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  text-indent: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  border: 0 none;
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+.offscreen {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+body {
+  font-family: "NotoSans Light", "Malgun Gothic", "맑은 고딕", "Apple SD Gothic Neo", "돋움", dotum, sans-serif;
+}
+
+.wrap .content .form {
+  width: 100%;
+  padding-bottom: 200px;
+}
+
+.wrap .content .form__inner {
+  width: 1032px;
+  max-width: 1032px;
+  margin: 0 auto;
+}
+
+.wrap .content .form__inner .bg {
+  width: 100%;
+  height: 123px;
+  margin-top: 40px;
+  border-radius: 5px;
+  background: url("../../img/pages/help/request_bg.png") #68b5af right bottom no-repeat;
+}
+
+.wrap .content .form__inner .form__title {
+  margin: 60px 0 22px 0;
+}
+
+.wrap .content .form__inner .form__summary {
+  margin: 27px 0 27px 0;
+  font-weight: bold;
+}
+
+.wrap .content .form__inner form {
+  position: relative;
+}
+
+.wrap .content .form__inner form .form__contents {
+  width: 100%;
+}
+
+.wrap .content .form__inner form .form__contents li .form__label {
+  float: left;
+  width: 20%;
+  height: 130px;
+}
+
+.wrap .content .form__inner form .form__contents li .form__label .form__txt {
+  display: block;
+  padding: 43px 0 0 70px;
+  font-weight: bold;
+}
+
+.wrap .content .form__inner form .form__contents li .form__input {
+  float: left;
+  width: 80%;
+  height: 130px;
+}
+
+.wrap .content .form__inner form .form__contents li .form__input select {
+  width: 100%;
+  padding: 15px 0 15px 10px;
+  margin-top: 10px;
+  -moz-appreance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background: url("../../img/pages/loginForm/select_down.png") 95% 50% no-repeat;
+}
+
+.wrap .content .form__inner form .form__contents li .form__input select::-ms-expand {
+  display: none;
+}
+
+.wrap .content .form__inner form .form__contents li .form__input .form__txt {
+  display: block;
+  padding: 10px 0 0 10px;
+}
+
+.wrap .content .form__inner form .form__contents li .form__input input {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px 0 15px 10px;
+  font-size: 13px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .content .form__inner form .form__contents li .form__input .form__info {
+  font-size: 12px;
+  margin: 5px 0 0 5px;
+}
+
+.wrap .content .form__inner form .form__contents li .form__input .form__info p + p {
+  margin: 5px 0 5px 0;
+}
+
+.wrap .content .form__inner form .form__contents li .form__input textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 44px 0 0 10px;
+  font-size: 13px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .content .form__inner form .form__contents li .form__input .form__input--height {
+  margin-top: 29px;
+}
+
+.wrap .content .form__inner form .form__contents li .form__input .form__select {
+  margin-top: 27px;
+}
+
+.wrap .content .form__inner form .form__contents li:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrap .content .form__inner form .form__contents li:nth-child(3) {
+  height: 136px;
+}
+
+.wrap .content .form__inner form .form__btn {
+  display: block;
+  float: right;
+  width: 141px;
+  height: 52px;
+  background: #3c404b;
+  border-radius: 10px;
+  margin-top: 72px;
+}
+
+.wrap .content .form__inner form .form__btn .form__txt {
+  font-size: 13px;
+  color: #fff;
+}
+
+.wrap .content .form__inner form .form__btn:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
