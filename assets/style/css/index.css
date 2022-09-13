@@ -69,8 +69,8 @@ fieldset {
   min-width: 0;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -92,11 +92,11 @@ main {
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
 }
 
 .wrap {
-  background: #ffc333;
+  background: #ffcb43;
   position: relative;
 }
 
@@ -148,7 +148,7 @@ main {
 }
 
 .wrap header .header-content:after {
-  content: " ";
+  content: ' ';
   display: block;
   clear: both;
 }
@@ -173,7 +173,7 @@ main {
   height: auto;
   padding-bottom: 56.25%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
