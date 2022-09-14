@@ -29,6 +29,8 @@ https://www.youtube.com/watch?v=dWVaoEgymlk
 #### ⚙️ 5. 주요기능
 + 슬라이더(Swiperjs / 세로슬라이드)
 + 다음지도 API 연결
++ 웹접근성 
+![스크린샷 2022-09-14 오후 10 49 25](https://user-images.githubusercontent.com/47154709/190175314-b72b33f5-baa6-4b5d-bb7a-99c869c9bb4d.png)
 
 #### 🔦 6. 애플리케이션 구조
 ![PNG  폴더구조](https://user-images.githubusercontent.com/47154709/190152429-3991ad5a-7c02-44ea-a34d-ca0ca6810a7c.png)
