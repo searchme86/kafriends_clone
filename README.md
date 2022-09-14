@@ -27,7 +27,20 @@ https://www.youtube.com/watch?v=dWVaoEgymlk
   + DAUM MAP API
 
 #### ⚙️ 5. 주요기능
++ 슬라이더(Swiperjs / 세로슬라이드)
++ 다음지도 API 연결
+
 #### 🔦 6. 애플리케이션 구조
+![PNG  폴더구조](https://user-images.githubusercontent.com/47154709/190152429-3991ad5a-7c02-44ea-a34d-ca0ca6810a7c.png)
+
+폴더명 | 폴더내용
+----| -----
+assets | 비디오 영상, 이미지(img), 스크립트(js), 데이터(json)
+components | 뷰 파일(html)
+
+
+#### 🔦 6. 애플리케이션 구조
+
 #### 🧸 7. 애플리케이션 기능 미리보기
 
 
