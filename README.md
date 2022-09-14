@@ -5,11 +5,11 @@
 ![PNG  Gagao_main_web](https://user-images.githubusercontent.com/47154709/190147714-876e0abf-71ef-46a8-b468-2bec18b88008.png)
 
 #### 👋🏻 1. 프로젝트 미리보기
-1. 애플리케이션(웹)
-Uploading [Video_Full] Gagao_Web_preview.MP4…
+#### 1. 애플리케이션(웹)
+https://www.youtube.com/watch?v=EL9wl3rEpOM
 
-2. 애플리케이션(모바일)
-Uploading [Video_Full] Gagao_Mobile_preview.MP4…
+#### 2. 애플리케이션(모바일)
+https://www.youtube.com/watch?v=dWVaoEgymlk
 
 #### 💁🏻 2. 애플리케이션 소개
 카카오 프렌즈 클론 프로젝트
