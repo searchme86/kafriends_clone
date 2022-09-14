@@ -1,5 +1,3 @@
-# Gagao 
-#### 카카오프렌즈 clone 프로젝트
+# Gagao (KaKao 프렌즈 clone )
 
-배포 경로
-https://searchme86.github.io/kafriends_clone/
+#### 개인프로젝트 (https://searchme86.github.io/kafriends_clone/)
