@@ -60,20 +60,21 @@ https://user-images.githubusercontent.com/47154709/190154179-6339171f-34ea-482d-
 #### 7-7. 결제팝업
 https://user-images.githubusercontent.com/47154709/190154251-3d0702d6-40ad-4e8c-b5e6-a5bf7c08233e.MP4
 
-
 #### 7-8. 배송정보
-
+https://user-images.githubusercontent.com/47154709/190154910-2a9a10ef-5f2c-4738-8448-187a48b4d636.MP4
 
 #### 7-9. 지불
-
+https://user-images.githubusercontent.com/47154709/190154991-a51e25da-2c6f-4053-9c2d-e0e317cd173a.MP4
 
 #### 7-10. 검색
-
+https://user-images.githubusercontent.com/47154709/190155101-bdb640d8-79a9-4221-aedc-a11115c7bf69.MP4
 
 #### 7-11. 슬라이드 메뉴
-
+https://user-images.githubusercontent.com/47154709/190155279-433b182a-7dd3-4cab-94f8-af16e044e2f6.MP4
 
 #### 7-12. 스킵 네비게이션
+https://user-images.githubusercontent.com/47154709/190155365-9e3a6a1d-ef67-4415-b7be-addd216d0f24.MP4
+
 
 
 
