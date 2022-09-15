@@ -15,7 +15,7 @@ https://www.youtube.com/watch?v=dWVaoEgymlk
 카카오 프렌즈 클론 프로젝트
 
 ### 🌞 3. 프로젝트 일정
-작업기간 : 2020/07 ~ 08
+작업기간 : 2020/09 ~ 10
 
 ### 🔨 4. 사용기술
 + view
